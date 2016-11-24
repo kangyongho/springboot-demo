@@ -26,4 +26,16 @@ public class HelloController {
 
         return "hello";
     }
+
+    @RequestMapping("test")
+    public String testbranch(Locale locale, Model model) {
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+        String formatteDate = dateFormat.format(date);
+
+        model.addAttribute("servertime", formatteDate);
+        model.addAttribute("name", "Spring from daniel");
+
+        return "test-branch-01";
+    }
 }
