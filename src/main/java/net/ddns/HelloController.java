@@ -26,4 +26,21 @@ public class HelloController {
 
         return "hello";
     }
+
+    @RequestMapping("/")
+    public String mainPage() {
+        return "main_page";
+    }
+
+    @RequestMapping("demo")
+    public String demo(Locale locale, Model model) {
+        Date date = new Date();
+        DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+        String formatteDate = dateFormat.format(date);
+
+        model.addAttribute("servertime", formatteDate);
+        model.addAttribute("name", "Spring from daniel");
+
+        return "demo/hello-demo";
+    }
 }

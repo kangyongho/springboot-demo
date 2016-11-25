@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>mirlang2 portfolio</title>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="css/main.css" />
+##    <link rel="stylesheet" href="css/grid-guide.css" />
+    <link href="http://fonts.googleapis.com/css?family=Paytone+One" " rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/toggle.js"></script>
+</head>
+<body>
+
+<div class="boxA">
+    <div class="boxA-inner">
+    <div class="box1">
+        <div class="site">
+            <h1><a href="#">Mirlang2</a></h1>
+        </div>
+    </div>
+    <div class="box2">
+        <div id="menubtn">
+            <i class="fa fa-bars"></i><span>MENU</span></div>
+        <nav class="menu" id="menu">
+            <ul>
+                <li><a href="#">메인</a></li>
+                <li><a href="#">Spring</a></li>
+                <li><a href="#">Django</a></li>
+                <li><a href="#">node.js</a></li>
+                <li><a href="#">문의</a></li>
+            </ul>
+        </nav>
+    </div>
+    </div>
+</div>
+
+<div class="box3">
+    <div class="box3-inner">
+    <div class="top">
+    <img src="img/header.jpg" alt="" class="topimg">
+    <p class="catch">TimeSwitch는 데이터 축적과<br>분석/해석 서비스를 제공합니다.</p>
+    </div>
+    </div>
+</div>
+
+<div class="box6">
+    <div class="box6-inner">
+    <div class="box6-1">
+        <div class="summary">
+        <a href="#">
+        <i class="fa fa-database"></i>
+        <h1>데이터 분석/해석</h1>
+        <p>목적에 맞는 다양한 각도로<br>
+        활용할 수 있게 합니다.</p>
+        </a>
+        </div>
+    </div>
+    <div class="box6-2">
+        <div class="summary">
+        <a href="#">
+        <i class="fa fa-bar-chart-o"></i>
+        <h1>데이터 시각화</h1>
+        <p>해석 결과는 데이터 시각화해서<br>
+        활용할 수 있게 합니다.</p>
+        </a>
+        </div>
+    </div>
+    <div class="box6-3">
+        <div class="summary">
+        <a href="#">
+        <i class="fa fa-envelope"></i>
+        <h1>24시간 지원</h1>
+        <p>24시간 대응 팀으로<br>
+        장애에 신속하게 대응합니다.</p>
+        </a>
+        </div>
+    </div>
+    </div>
+</div>
+
+<div class="box4">
+    <div class="box4-inner">
+    <div class="box4-1">
+        <div class="news">
+            <h1>공지사항</h1>
+            <ul>
+                <li><a href="#"><time datetime="2016-10-15">10/15</time>
+                    <div class="text">데이터센터 유지 보수를 수행합니다.</div></a></li>
+                <li><a href="#"><time datetime="2016-10-05">10/05</time><div class="text">
+                    안드로이드 애플리케이션 버전 1.2를 출시했습니다.</div></a></li>
+                <li><a href="#"><time datetime="2016-09-22">09/22</time><div class="text">
+                    세미나/캠페인과 관련된 공지사항</div></a></li>
+                <li><a href="#"><time datetime="2016-09-15">09/15</time><div class="text">
+                    그래프 표시의 변경 방식을 쉽게 바꿨습니다.</div></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="box4-2">
+       <div class="follow">
+           <ul>
+               <li><a href="#" class="follow-tw">
+                   <i class="fa fa-fw fa-twitter"></i>
+                   Twitter</a></li>
+               <li><a href="#" class="follow-fb">
+                   <i class="fa fa-fw fa-facebook"></i>
+                   Facebook</a></li>
+               <li><a href="#" class="follow-gp">
+                   <i class="fa fa-fw fa-google-plus"></i>
+                   Google+</a></li>
+               <li><a href="#" class="follow-tg">
+                   <i class="fa fa-fw fa-telegram"></i>
+                   Telegram</a></li>
+               <li><a href="#" class="follow-kt">
+                   <i class="fa fa-fw fa-bed"></i>
+                   KakaoTalk</a></li>
+           </ul>
+       </div>
+    </div>
+    </div>
+</div>
+
+<div class="box5">
+    <div class="box5-inner">
+    <div class="copyright">
+        <p>Copyright &copy; Mirlang2</p>
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

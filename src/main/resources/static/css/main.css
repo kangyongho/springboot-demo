@@ -1,0 +1,334 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif;
+}
+
+/*사이트 이름*/
+.site h1 a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.site h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+/*헤더 그림*/
+.topimg {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+/* 캐치 카피 */
+.catch {
+    margin: 0;
+    padding: 15px;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 28px;
+}
+/* 헤더 그림에 캐치 카피를 중첩 */
+.top {position: relative;}
+.catch {
+    position: absolute;
+    bottom: 7%;
+    left: 3%;
+}
+/* 개요 */
+.summary a {
+    display: block;
+    background-color: #222222;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
+.summary a:hover {opacity: 0.8;}
+.summary i {
+    display: block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 38px;
+}
+.summary .fa-database {background-color: #bfbd13}
+.summary .fa-bar-chart-o {background-color: #c58839}
+.summary .fa-envelope {background-color: #859f46}
+.summary h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+.summary p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #524e3c;
+    font-size: 12px;
+}
+/*공지사항*/
+.news h1 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #666666;
+}
+.news ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.news li a {
+    display: block;
+    padding: 5px;
+    border-bottom: dotted 2px #dddddd;
+    color: #000000;
+    font-size: 14px;
+    text-decoration: none;
+}
+.news li a:hover {
+    background-color: #eeeeee;
+}
+.news time {
+    color: #888888;
+    font-weight: bold;
+}
+.news a:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.news time {
+    float: left;
+    width: 60px;
+}
+.news .text {
+    float: none;
+    width: auto;
+    margin-left: 60px;
+}
+/* SNS 메뉴 */
+.follow ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.follow li a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+.follow li a:hover {opacity: 0.8}
+.follow-tw {background-color: #63bafb}
+.follow-fb {background-color: #5288f7}
+.follow-gp {background-color: #f65d4a}
+.follow-kt {background-color: #FFD600}
+.follow-tg {background-color: #0088cc}
+.follow i {
+    margin-right: 10px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+/*저작권*/
+.copyright p {
+    margin: 0;
+    color: #666666;
+    font-size: 14px;
+}
+/* Box5를 바 형태로 디자인 */
+.box5 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #C8E6C9;
+}
+/* 박스의 왼쪽 오른쪽 */
+.boxA, .box6, .box4, .box5 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+/* 박스의 위아래 */
+.boxA {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box4 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.box6 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* BoxA, box3, Box4의 배경 */
+.boxA {background-color: #0C4B33}
+.box3 {background-color: #43853d}
+.box6 {background-color: #2E7D32}
+.box4 {background-color: #44B78B}
+
+/* 599px 이하 */
+@media (max-width: 599px) {
+    .menu li a {
+        padding: 10px 7px;
+        font-size: 11px;
+    }
+    .catch {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+/* 767px 이하 */
+@media (max-width: 767px) {
+    /* 토글 버튼 */
+    #menubtn {
+        padding: 20px;
+        background-color: transparent;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+    #menubtn:hover {opacity: 0.8;}
+    #menubtn i {
+        color: #ffffff;
+        font-size: 20px;
+    }
+    #menubtn span {
+        display: inline-block;
+        text-indent: -9999px;
+    }
+    /* 내비게이션 메뉴 토글로 감추기 */
+    #menu {display: none;}
+    /* 내비게이션 메뉴 세로정렬 */
+    .menu ul {
+        margin: 20px 0px 0px 0px;
+        padding: 0;
+        list-style: none;
+    }
+    .menu li {
+        border-top: 1px solid #106142;
+    }
+    .menu li a {
+        display: block;
+        padding: 20px 0px;
+        color: #ffffff;
+        font-size: 17px;
+        text-decoration: none;
+    }
+    .menu li a:hover {
+        background-color: #eeeeee;
+    }
+    /* 공지사항과 SNS 메뉴의 세로 방향 간격 조정 */
+    .box4-1 {padding-bottom: 20px;}
+    /* 콘텐츠 개요 세로 방향 간격 조정 */
+    .box6-1, .box6-2 {padding-bottom: 10px}
+}
+/* 768px 이상 */
+@media (min-width: 768px) {
+    /* 토글 버튼 */
+    #menubtn {display: none;}
+    /*내비게이션*/
+    #menu {display: block !important;}
+    .menu ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .menu li a {
+        display: block;
+        padding: 10px 15px;
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .menu li a:hover {
+        background-color: #eeeeee;
+    }
+    .menu ul:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .menu li {
+        float: left;
+        width: auto;
+    }
+    /* Box1과 Box2를 가로 정렬하는 설정*/
+    .boxA:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .box1 {
+        float: left;
+        width: auto;
+    }
+    .box2 {
+        float: right;
+        width: auto;
+    }
+    /* Box4-1과 Box4-2를 가로 정렬하는 설정 */
+    .box4:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .box4-1 {
+        float: left;
+        width: 70%;
+        padding-right: 35px;
+        /*box-sizing이 없으면 100%를 넘기게 된다*/
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    .box4-2 {
+        float: left;
+        width: 30%;
+    }
+    /* Box6-1, Box6-2, Box6-3을 가로 정렬하는 설정 */
+    .box6:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+    .box6-1 {
+        float: left;
+        width: 33.3333%;
+        padding-right: 10px;
+    }
+    .box6-2 {
+        float: left;
+        width: 33.3333%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .box6-3 {
+        float: left;
+        width: 33.3333%;
+        padding-left: 10px;
+    }
+    .box6-1, .box6-2, .box6-3 {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+}
+
+/* 1190px 이상 */
+@media (min-width: 1190px) {
+    /* 전체 너비를 고정 */
+    .boxA-inner, .box4-inner, .box5-inner, .box6-inner {
+        width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
