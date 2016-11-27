@@ -89,7 +89,7 @@ body {
     text-decoration: none;
 }
 .news li a:hover {
-    background-color: #eeeeee;
+    background-color: #2E7D32;
 }
 .news time {
     color: #888888;
@@ -130,7 +130,7 @@ body {
 .follow-tw {background-color: #63bafb}
 .follow-fb {background-color: #5288f7}
 .follow-gp {background-color: #f65d4a}
-.follow-kt {background-color: #FFD600}
+.follow-kt {background-color: #F9A825}
 .follow-tg {background-color: #0088cc}
 .follow i {
     margin-right: 10px;
@@ -224,7 +224,7 @@ body {
         text-decoration: none;
     }
     .menu li a:hover {
-        background-color: #eeeeee;
+        background-color: #2E7D32;
     }
     /* 공지사항과 SNS 메뉴의 세로 방향 간격 조정 */
     .box4-1 {padding-bottom: 20px;}
@@ -250,7 +250,7 @@ body {
         text-decoration: none;
     }
     .menu li a:hover {
-        background-color: #eeeeee;
+        background-color: #2E7D32;
     }
     .menu ul:after {
         content: "";
