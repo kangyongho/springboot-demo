@@ -1,9 +1,16 @@
 package net.ddns;
 
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 
+import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import java.io.*;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -46,7 +53,52 @@ public class HelloController {
 
     @RequestMapping("spring")
     public String spring() {
-
         return "spring/spring_main";
+    }
+
+    // file download
+    @RequestMapping(value = "/down", method = RequestMethod.GET)
+    public void getFile(HttpServletResponse response) {
+        try {
+            // get your file as InputStream
+            InputStream is = new FileInputStream("C:\\GitHub\\springboot-demo\\src\\main\\resources\\static\\file\\temp.txt");
+            //IOUtils.copy(is, response.getOutputStream());
+            org.apache.commons.io.IOUtils.copy(is, response.getOutputStream());
+            response.setContentType("text/plain");
+            response.setHeader("Content-Disposition", "attachment;filename=downloadname.txt");
+            response.flushBuffer();
+            is.close();
+        } catch (IOException ex) {
+            //log.info("Error writing file to output stream. Filename was '{}'", fileName, ex);
+            throw new RuntimeException("IOError writing file to output stream");
+        }
+    }
+
+    @RequestMapping("pdf")
+    public void getPdf(HttpServletRequest request, HttpServletResponse response) throws IOException {
+
+        //System.out.println(request.getRealPath("/static/pdt_test.pdf"));
+        //String path = request.getRealPath("/static/pdt_test.pdf");
+        ClassPathResource classPathResource = new ClassPathResource("static/file/pdf_test.pdf");
+        System.out.println(classPathResource.getURL());
+        System.out.println(classPathResource.exists());
+        System.out.println(classPathResource.getFile());
+        try {
+            //ClassPathResource classPathResource = new ClassPathResource("/static/pdf_test.pdf");
+            //System.out.println(classPathResource);
+            //BufferedReader reader = new BufferedReader(new InputStreamReader(classPathResource.getInputStream()));
+            //reader.lines().forEach(System.out::println);
+            //InputStream inputStream = new FileInputStream("C:\\GitHub\\springboot-demo\\src\\main\\resources\\static\\file\\pdf_test.pdf");
+            InputStream inputStream = new FileInputStream(classPathResource.getFile());
+            org.apache.commons.io.IOUtils.copy(inputStream, response.getOutputStream());
+            response.setContentType("application/pdf");
+            response.setHeader("Content-Disposition", "attachment;filename=thisistestpdf.pdf");
+            //response.flushBuffer();
+            inputStream.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
