@@ -78,7 +78,7 @@ public class SpringbootDemoApplication {
         </div>
         <div class="follow">
             <ul>
-                <li><a href="#" class="source-down">
+                <li><a href="pdf" download="test.pdf" class="source-down">
                     <i class="fa fa-fw fa-download"></i>
                     Download</a></li>
                 <li><a href="https://github.com/kangyongho/springboot-demo" class="github">
