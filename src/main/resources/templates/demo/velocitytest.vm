@@ -4,45 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width" />
     <title>Spring Project</title>
-    <link rel="stylesheet" href="/css/spring.css">
+    <link rel="stylesheet" href="css/spring.css">
     <link href="http://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet" type="text/css" />
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="/js/toggle.js"></script>
+    <script src="js/toggle.js"></script>
 </head>
 <body>
 <header class="header">
-<div class="header-inner">
-    <div class="header-title">
-        <a href="/"><img src="https://spring.io/img/spring-by-pivotal-9066b55828deb3c10e27e609af322c40.png", alt="spring"></a>
+    <div class="header-inner">
+        <div class="header-title">
+            <a href="#"><img src="https://spring.io/img/spring-by-pivotal-9066b55828deb3c10e27e609af322c40.png", alt="spring"></a>
+        </div>
+        <div class="top-menu">
+            <div id="top-menu-btn">
+                <i class="fa fa-bars"></i><span>MENU</span></div>
+            <nav class="top-menu-list" id="top-menu">
+                <ul>
+                    <li><a href="#">Docs</a></li>
+                    <li><a href="#">Spring Boot</a></li>
+                    <li><a href="#">Router</a></li>
+                    <li><a href="#">Etc</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
-    <div class="top-menu">
-        <div id="top-menu-btn">
-            <i class="fa fa-bars"></i><span>MENU</span></div>
-        <nav class="top-menu-list" id="top-menu">
-            <ul>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Spring Boot</a></li>
-                <li><a href="#">Router</a></li>
-                <li><a href="#">Etc</a></li>
-            </ul>
-        </nav>
-    </div>
-</div>
 </header>
 
 <div class="header-sub">
-<div class="header-sub-inner">
-    <div class="description">
-        <h1>Spring Boot</h1>
+    <div class="header-sub-inner">
+        <div class="description">
+            <h1>Spring Boot</h1>
+        </div>
     </div>
-</div>
 </div>
 
 <div class="container">
     <div class="container-inner">
         <div class="content">
-            #parse ("spring/spring_main_content.vm")
+            #parse ("velocityinclude.vm")
         </div>
 
         <div class="right-aside">
@@ -88,11 +88,11 @@
 </div>
 
 <footer class="footer">
-<div class="footer-inner">
-    <div class="copyright">
-        <p>Copyright &copy; mirlang2</p>
+    <div class="footer-inner">
+        <div class="copyright">
+            <p>Copyright &copy; mirlang2</p>
+        </div>
     </div>
-</div>
 </footer>
 </body>
 </html>

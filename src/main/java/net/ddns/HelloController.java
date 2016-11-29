@@ -52,9 +52,16 @@ public class HelloController {
     }
 
     @RequestMapping("spring")
-    public String spring() {
-        return "spring/spring_main";
-    }
+    public String spring() { return "spring/spring_main"; }
+
+    @RequestMapping("123")
+    public String startSpringxyz() { return  "spring/category/category"; }
+
+    @RequestMapping("spring/start")
+    public String startSpring() { return  "spring/category/category"; }
+
+    @RequestMapping("spring/start/123")
+    public String startSpring123() { return  "spring/category/category"; }
 
     // file download
     @RequestMapping(value = "/down", method = RequestMethod.GET)
@@ -91,4 +98,5 @@ public class HelloController {
             e.printStackTrace();
         }
     }
+
 }

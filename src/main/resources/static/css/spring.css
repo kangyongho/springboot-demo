@@ -1,124 +1,48 @@
 @charset "UTF-8";
 /* 초기화 코드 */
 * {margin: 0; padding: 0;}
-.body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; background-color: #666}
+body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; background-color: #f1f1f1; }
 li {list-style: none;}
-a {text-decoration: none; font-size: 14px; color: #f1f1f1;}
-a:hover {opacity: 0.8;}
+a {text-decoration: none; font-size: 14px; color: #34302d}
 img {border: 0;}
 
 /* 배경색 지정 */
-.boxA {background-color: #34302d}
-.box3 {background-color: #666}
-.box4 {background-color: #f1f1f1}
-.box6 {background-color: #34302d}
-/* 타이틀 이미지 설정 */
-.title img {
-    background-color: transparent;
-    width: 200px;
-    height: auto;
-    margin-top: 25px;
-    padding-left: 10px;
-}
-/* 메뉴 hover */
-.menu a:hover {background-color: #6db33f}
-/* 개요 설명 설정 */
-.description {
-    color: #f1f1f1;
-    width: 60%;
-}
-.description h1 {
-    padding: 25px 0px 5px 10px;
-    font-size: 24px;
-}
-.description p {
-    padding: 5px 0px 30px 10px;
-    font-size: 16px;
-    white-space: normal;
-}
-/* 본문 설정 */
-.content-box {
-    padding-top: 15px;
-    padding-bottom: 30px;
-}
-.content-title h1 {
-    padding-left: 10px;
-    padding-bottom: 5px;
-    font-size: 24px;
-    color: #34302d;
-}
-.content {
-    margin: 0px 10px;
-    padding: 10px;
-    border: 3px solid #6db33f;
-    font-size: 16px;
-}
-.content pre {
-    color: #34302d;
-    overflow-x: auto;
-}
-/* SNS 메뉴 */
-.follow {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 20px;
-}
-.follow ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-.follow li a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    color: #ffffff;
-    font-size: 14px;
-    text-decoration: none;
-}
-.follow li a:hover {opacity: 0.8}
-.source-down {background-color: #6db33f}
-.github {background-color: #333333}
-.follow-tw {background-color: #63bafb}
-.follow-fb {background-color: #5288f7}
-.follow-gp {background-color: #f65d4a}
-.follow-kt {background-color: #F9A825}
-.follow-tg {background-color: #0088cc}
-.follow i {
-    margin-right: 10px;
-    font-size: 24px;
-    vertical-align: middle;
-}
-/*저작권*/
-.copyright p {
-    margin: 0;
-    padding-left: 10px;
-    color: #f1f1f1;
-    font-size: 14px;
-}
-/* Box6를 바 형태로 디자인 */
-.box6 {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    background-color: #34302d;
-}
+.header {background-color: #34302d}
+.header-sub {background-color: #666}
+.container-inner-left {background-color: #f1f1f1}
+.container-inner-right {background-color: #6db33f}
+.footer {background-color: #34302d}
 
 /* 599px 이하 */
 @media (max-width: 599px) {
-    .description {
-        width: 100%;
-    }
-    .content-box {
-        width: 100%;
-    }
 }
 /* 767px 이하 */
 @media (max-width: 767px) {
+    /* 타이틀 이미지 설정 */
+    .header-title img {
+        background-color: transparent;
+        width: 200px;
+        padding-left: 10px;
+        padding-top: 12px;
+        padding-bottom: 10px;
+        vertical-align: middle;
+    }
+    /* 메뉴 간격 설정 */
+    .top-menu li {
+        margin-left: 10px;
+        margin-right: 10px;
+        border-top: 1px solid #6db33f;
+    }
+    .top-menu a {
+        padding: 20px 10px;
+        display: block;
+        color: #f1f1f1;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .top-menu a:hover {opacity: 0.8;}
     /* 토글 버튼 */
-    #menubtn {
+    #top-menu-btn {
         padding: 20px;
         background-color: transparent;
         position: absolute;
@@ -126,113 +50,282 @@ img {border: 0;}
         right: 10px;
         cursor: pointer;
     }
-    #menubtn:hover {opacity: 0.8;}
-    #menubtn i {
+    #top-menu-btn:hover {opacity: 0.8;}
+    #top-menu-btn i {
         color: #ffffff;
-        font-size: 20px;
+        font-size: 22px;
     }
-    #menubtn span {
+    #top-menu-btn span {
         display: inline-block;
         text-indent: -9999px;
     }
     /* 내비게이션 메뉴 토글로 감추기 */
-    #menu {display: none;}
-    .menu {
-        padding: 10px;
+    #top-menu {display: none;}
+
+    /* 서브 헤더 위아래 조절 */
+    .description {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        color: #ebf1e7;
+        font-size: 24px;
     }
-    /* 내비게이션 메뉴 세로정렬 */
-    .menu ul {
-        margin: 20px 0px 0px 0px;
-        padding: 0;
-        list-style: none;
+    .description h1 {
+        font-size: 27px;
     }
-    .menu li {
-        border-top: 1px solid #6db33f;
+
+    /* 컨텐츠 꾸미기 */
+    .content {
+        padding-bottom: 10px;
     }
-    .menu li a {
-        display: block;
-        padding: 20px 0px;
-        color: #ffffff;
-        font-size: 17px;
-        text-decoration: none;
-    }
-    .title img {
-        background-color: transparent;
-        width: 150px;
-        height: auto;
-        margin-top: 25px;
+    .content li {
+        list-style-type: disc;
     }
     .content-box {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        border-bottom: 1px solid #CFE3DC;
+    }
+    .content-box h2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .content-box p {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .content-box ul {
+        padding-left: 30px;
+    }
+
+    /* 오른쪽 서브 메뉴 꾸미기 */
+    /* SNS 메뉴 */
+    .follow {
+        padding: 10px 10px;
+    }
+    .follow li a {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        color: #ffffff;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        font-size: 15px;
+        text-decoration: none;
+    }
+    .follow li a:hover {opacity: 0.8}
+    .source-down {background-color: #6db33f}
+    .github {background-color: #333333}
+    .follow-tw {background-color: #63bafb}
+    .follow-fb {background-color: #5288f7}
+    .follow-gp {background-color: #f65d4a}
+    .follow-kt {background-color: #F9A825}
+    .follow-tg {background-color: #0088cc}
+    .follow i {
+        margin-right: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+    /* 우측 서브 메뉴 */
+    .right-aside-menu {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .right-aside-menu h2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .right-aside-menu p {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    /* 푸터 조절 */
+    .copyright {
+        padding-left: 10px;
+        padding-top: 15px;
         padding-bottom: 15px;
+    }
+    .copyright p {
+        color: #f1f1f1;
+        font-size: 14px;
     }
 }
 /* 768 이상 */
 @media (min-width: 768px) {
-    /* header 요소 가로 정렬 */
-    .boxA:after {
+    /* 헤더 가로 및 세로중앙 정렬 */
+    .header {
+        line-height: 100px;
+        height: 100px;
+        border-top: 4px solid #6db33f;
+    }
+    .header:after {
         content: '';
         display: block;
         clear: both;
     }
-    .box1 {
+    .header-title {
         float: left;
         width: auto;
     }
-    .box2 {
+    .top-menu {
         float: right;
         width: auto;
     }
-    /* 토글 버튼 */
-    #menubtn {display: none;}
-    /*내비게이션*/
-    #menu {display: block !important;}
-    /* 메뉴 세로정렬 */
-    .menu {
-        line-height: 70px;
+    /* 타이틀 이미지 설정 */
+    .header-title img {
+        background-color: transparent;
+        width: 200px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        vertical-align: middle;
     }
-    .menu li a {
+    /* 탑 메뉴 가로 정렬 */
+    /*.top-menu {line-height: 100px;}*/
+    .top-menu:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    .top-menu li {
+        float: left;
+        width: auto;
+    }
+    .top-menu a {
         min-width: 80px;
         display: block;
-        padding: 20px 10px;
         color: #f1f1f1;
         font-size: 17px;
         text-decoration: none;
         text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    /* 메뉴 가로정렬 */
-    .box2:after {
+    .top-menu a:hover {background-color: #6db33f}
+    /* 토글 버튼 */
+    #top-menu-btn {display: none; text-indent: -9999px;}
+    /*내비게이션*/
+    #top-menu {display: block !important;}
+
+    /* 서브 헤더 위아래 조절 */
+    .description {
+        padding-top: 10px;
+        padding-bottom: 20px;
+        padding-left: 10px;
+        color: #ebf1e7;
+        font-size: 24px;
+    }
+    .description h1 {
+        font-size: 32px;
+    }
+
+    /* 컨텐츠와 우측박스 가로 정렬 */
+    .container:after {
         content: '';
         display: block;
         clear: both;
     }
-    .menu li {
-        float: left;
-        width: auto;
-    }
-    /* 본문 공유 가로정렬 */
-    .box4-inner:after {
-        content: '';
-        display: block;
-        clear: both;
-    }
-    .content-box {
+    .content {
         float: left;
         width: 70%;
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
     }
-    .follow {
+    .right-aside {
         float: right;
-        width: 20%;
-        padding-top: 30px;
+        width: 30%;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    /* 컨텐츠 꾸미기 */
+    .content {
+        padding-bottom: 20px;
+    }
+    .content li {
+        list-style-type: disc;
+    }
+    .content-box {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        margin-right: 56px;
+        border-bottom: 1px solid #CFE3DC;
+    }
+    .content-box h2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .content-box p {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+    .content-box ul {
+        padding-left: 30px;
+    }
+
+    /* 오른쪽 서브 메뉴 꾸미기 */
+    /* SNS 메뉴 */
+    .follow {
+        width: 170px;
+        padding: 20px 10px;
+    }
+    .follow li a {
+        display: block;
+        margin-bottom: 10px;
+        padding: 10px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #ffffff;
+        font-size: 14px;
+        text-decoration: none;
+    }
+    .follow li a:hover {opacity: 0.8}
+    .source-down {background-color: #6db33f}
+    .github {background-color: #333333}
+    .follow-tw {background-color: #63bafb}
+    .follow-fb {background-color: #5288f7}
+    .follow-gp {background-color: #f65d4a}
+    .follow-kt {background-color: #F9A825}
+    .follow-tg {background-color: #0088cc}
+    .follow i {
+        margin-right: 10px;
+        font-size: 24px;
+        vertical-align: middle;
+    }
+    /* 우측 서브 메뉴 */
+    .right-aside-menu {
+        padding-left: 10px;
+        padding-bottom: 10px;
+    }
+    .right-aside-menu h2 {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .right-aside-menu p {
+        padding-top: 5px;
+        padding-bottom: 10px;
+    }
+
+    /* 푸터 조절 */
+    .copyright {
+        padding-left: 10px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .copyright p {
+        color: #f1f1f1;
+        font-size: 14px;
     }
 }
 /* 1190px 이상 */
 @media (min-width: 1190px) {
-    /* 전체 너비를 고정 */
-    .boxA-inner, .box3-inner, .box4-inner, .box5-inner, .box6-inner {
-        width: 1140px;
+    .header-inner, .header-sub-inner, .container-inner, .footer-inner {
+        width: 1400px;
         margin-left: auto;
         margin-right: auto;
     }

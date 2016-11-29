@@ -1,0 +1,22 @@
+<div class="content-box">
+    <h2>InteliJ Spring Boot</h2>
+    <p>File > Project > 로 이동</p>
+    <div class="content-box-inner">
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+    </div>
+</div>
+<div class="content-box">
+    <h2>Eclipse Spring Boot</h2>
+    <p>File > Project > 로 이동</p>
+    <div class="content-box-inner">
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+        <p>내용 작성 ...</p>
+    </div>
+</div>
