@@ -2,21 +2,45 @@
     <h2>InteliJ Spring Boot</h2>
     <p>File > Project > 로 이동</p>
     <div class="content-box-inner">
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
+        <div class="cbi-title"><p><span>hello/SampleController.java</span></p></div>
+        <p><span class="cbi-bold">import</span><span>org.springframework.boot.*;</span></p>
+        <p><span class="cbi-bold">import</span><span>org.springframework.boot.autoconfigure.*;</span></p>
+        <p><span class="cbi-bold">import</span><span>org.springframework.stereotype.*;</span></p>
+        <p><span class="cbi-bold">import</span><span>org.springframework.web.bind.annotation.*;</span></p><br/>
+        <p><span class="cbi-annotation">@Controller</span></p>
+        <p><span class="cbi-annotation">@EnableAutoConfiguration</span></p>
+        <p><span>public class</span><span class="cbi-class">SampleController</span><span>{</span></p><br/>
+        <p><span class="cbi-annotation cbi-indent-x4">@RequestMapping("/")</span></p>
+        <p><span class="cbi-annotation cbi-indent-x4">@ResponseBody</span></p>
+        <p><span class="cbi-indent-x4">String</span><span class="cbi-method">home</span><span>() {</span></p>
+        <p><span class="cbi-bold cbi-indent-x8">return</span><span>"Hello World!";</span></p>
+        <p><span class="cbi-indent-x4">}</span></p><br/>
+        <p><span class="cbi-indent-x4"><span class="cbi-bold">public</span><span>static void</span><span class="cbi-method">main</span><span class="cbi-parameter">(String[] args)</span><span class="cbi-bold">throws</span>Exception {</span></p>
+        <p><span class="cbi-indent-x8"><span class="cbi-parameter">SpringApplication.run(SampleController.class, args);</span></span></p>
+        <p><span class="cbi-indent-x4">}</span></p>
+        <p><span>}</span></p>
     </div>
 </div>
 <div class="content-box">
     <h2>Eclipse Spring Boot</h2>
     <p>File > Project > 로 이동</p>
     <div class="content-box-inner">
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
-        <p>내용 작성 ...</p>
+        <p class="cbi-title"><span>hello/SampleController.java</span></p>
+        <p><span class="cbi-bold">import</span><span>org.springframework.boot.*;</span></p>
+        <p><span class="cbi-bold">import</span><span>org.springframework.boot.autoconfigure.*;</span></p>
+        <p><span class="cbi-bold">import</span><span>org.springframework.stereotype.*;</span></p>
+        <p><span class="cbi-bold">import</span><span>org.springframework.web.bind.annotation.*;</span></p><br/>
+        <p><span class="cbi-annotation">@Controller</span></p>
+        <p><span class="cbi-annotation">@EnableAutoConfiguration</span></p>
+        <p><span>public class</span><span class="cbi-class">SampleController</span><span>{</span></p><br/>
+        <p><span class="cbi-annotation cbi-indent-x4">@RequestMapping("/")</span></p>
+        <p><span class="cbi-annotation cbi-indent-x4">@ResponseBody</span></p>
+        <p><span class="cbi-indent-x4">String</span><span class="cbi-method">home</span><span>() {</span></p>
+        <p><span class="cbi-bold cbi-indent-x8">return</span><span>"Hello World!";</span></p>
+        <p><span class="cbi-indent-x4">}</span></p><br/>
+        <p><span class="cbi-indent-x4"><span class="cbi-bold">public</span><span>static void</span><span class="cbi-method">main</span><span class="cbi-parameter">(String[] args)</span><span class="cbi-bold">throws</span>Exception {</span></p>
+        <p><span class="cbi-indent-x8"><span class="cbi-parameter">SpringApplication.run(SampleController.class, args);</span></span></p>
+        <p><span class="cbi-indent-x4">}</span></p>
+        <p><span>}</span></p>
     </div>
 </div>
