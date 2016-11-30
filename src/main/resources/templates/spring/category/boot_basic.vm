@@ -25,7 +25,7 @@
     <h2>Eclipse Spring Boot</h2>
     <p>File > Project > 로 이동</p>
     <div class="content-box-inner">
-        <p class="cbi-title"><span>hello/SampleController.java</span></p>
+        <div class="cbi-title"><p><span>hello/SampleController.java</span></p></div>
         <p><span class="cbi-bold">import</span><span>org.springframework.boot.*;</span></p>
         <p><span class="cbi-bold">import</span><span>org.springframework.boot.autoconfigure.*;</span></p>
         <p><span class="cbi-bold">import</span><span>org.springframework.stereotype.*;</span></p>
