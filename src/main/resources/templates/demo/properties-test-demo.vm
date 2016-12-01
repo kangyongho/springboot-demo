@@ -5,9 +5,18 @@
     <title>Hello daniel</title>
 </head>
 <body>
-<h1>스프링 외부 프로퍼티 설정파일 로딩 테스트</h1>
-<h2>logging.level.org.springframework ${log}</h2>
-<h2>이름 ${name}</h2>
-<h2>패스워드 ${password}</h2>
+
+<h1>스프링 외부 프로퍼티 로딩 테스트</h1>
+<div>Load from .properties file</div>
+<h2>logging.level.org.springframework: ${log}</h2>
+<h2>이름: ${name}</h2>
+<h2>패스워드: ${password}</h2>
+
+<div>Load from .yml file</div>
+<h2>dev name: ${namedev}</h2>
+<h2>dev url: ${urldev}</h2>
+<h2>prod name: ${nameprod}</h2>
+<h2>prod url: ${urlprod}</h2>
+
 </body>
 </html>

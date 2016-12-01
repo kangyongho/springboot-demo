@@ -1,5 +1,7 @@
 package net.ddns;
 
+import net.ddns.config.YamlProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
@@ -12,6 +14,7 @@ import java.io.*;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
+import java.util.Map;
 
 /**
  * Created by NPOST on 2016-11-24.
@@ -97,6 +100,7 @@ public class HelloController {
         }
     }
 
+    //외부설정 .properties 파일 Environments
     @Value("${logging.level.org.springframework}")
     String mode;
     @Value("${name}")
@@ -104,14 +108,31 @@ public class HelloController {
     @Value("${password}")
     String pw;
 
+    //외부설정 .yaml 파일 Environments
+    @Autowired
+    private YamlProperties yamlProperties;
+
     @RequestMapping("property")
     public String getProperty(Model model) {
+        System.out.println("@PropertySource from .properties");
         System.out.println("mode : " + mode);
         System.out.println("name : " + name);
         System.out.println("password : " + pw);
         model.addAttribute("name", name);
         model.addAttribute("password", pw);
         model.addAttribute("log", mode);
+
+        System.out.println("@ConfigurationProperties from .yaml");
+        Map<String, String> dev = yamlProperties.getDev();
+        Map<String, String> prod = yamlProperties.getDev();
+        System.out.println("environments.dev.url: " + dev.get("url"));
+        System.out.println("environments.dev.name: " + dev.get("name"));
+        System.out.println("environments.prod.url: " + prod.get("url"));
+        System.out.println("environments.prod.name: " + prod.get("name"));
+        model.addAttribute("urldev", dev.get("url"));
+        model.addAttribute("namedev", dev.get("name"));
+        model.addAttribute("urlprod", prod.get("url"));
+        model.addAttribute("nameprod", prod.get("name"));
         return "demo/properties-test-demo";
     }
 
