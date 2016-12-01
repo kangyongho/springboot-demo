@@ -105,11 +105,14 @@ public class HelloController {
     String pw;
 
     @RequestMapping("property")
-    public String getProperty() {
+    public String getProperty(Model model) {
         System.out.println("mode : " + mode);
         System.out.println("name : " + name);
         System.out.println("password : " + pw);
-        return "spring/spring_main";
+        model.addAttribute("name", name);
+        model.addAttribute("password", pw);
+        model.addAttribute("log", mode);
+        return "demo/properties-test-demo";
     }
 
 }

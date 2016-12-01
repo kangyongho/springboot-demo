@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Hello daniel</title>
+</head>
+<body>
+<h1>스프링 외부 프로퍼티 설정파일 로딩 테스트</h1>
+<h2>logging.level.org.springframework ${log}</h2>
+<h2>이름 ${name}</h2>
+<h2>패스워드 ${password}</h2>
+</body>
+</html>
