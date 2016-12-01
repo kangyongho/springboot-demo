@@ -33,7 +33,7 @@ public class FileIO {
 
     // ClassPathResource로 파일 경로 구해서 읽어오기
     public static void readFileText() {
-        ClassPathResource classPathResource = new ClassPathResource("static/file/temp.txt");
+        ClassPathResource classPathResource = new ClassPathResource("/static/file/temp.txt");
         try {
             BufferedReader br = new BufferedReader(new FileReader(classPathResource.getFile()));
             while (true) {
