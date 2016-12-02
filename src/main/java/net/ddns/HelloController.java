@@ -3,12 +3,10 @@ package net.ddns;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.util.ResourceUtils;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
 import java.text.DateFormat;
@@ -54,14 +52,11 @@ public class HelloController {
     @RequestMapping("spring")
     public String spring() { return "spring/spring_main"; }
 
-    @RequestMapping("123")
-    public String startSpringxyz() { return  "spring/category/category"; }
-
-    @RequestMapping("spring/start")
-    public String startSpring() { return  "spring/category/category"; }
-
-    @RequestMapping("spring/start/123")
-    public String startSpring123() { return  "spring/category/category"; }
+    @RequestMapping("spring/{start}")
+    public String startSpring(@PathVariable String start, Model model) {
+        model.addAttribute("content", start);
+        return  "spring/category/category";
+    }
 
     // file download
     @RequestMapping(value = "/down", method = RequestMethod.GET)
