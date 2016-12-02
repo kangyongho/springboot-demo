@@ -23,7 +23,7 @@ apply plugin: 'propdeps-eclipse'
 
 
 war {
-	baseName = 'ROOT'
+	baseName = 'test'
 }
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
