@@ -11,9 +11,10 @@ import java.util.Map;
  */
 @Component
 //내부 설정파일
-//@ConfigurationProperties(locations = {"classpath:fixture.yaml"}, prefix = "environments")
+//@ConfigurationProperties(locations = {"classpath:fixture.yml"}, prefix = "environments")
 //외부 설정파일
-@ConfigurationProperties(locations = {"file:C:\\properties\\application.yaml"}, prefix = "environments")
+@ConfigurationProperties(locations = {"file:C:\\properties\\application.yml"}, prefix = "environments")
+//@ConfigurationProperties(prefix = "environments")
 public class YamlProperties {
 
     private Map<String, String> dev = new HashMap<>();

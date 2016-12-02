@@ -124,7 +124,7 @@ public class HelloController {
 
         System.out.println("@ConfigurationProperties from .yaml");
         Map<String, String> dev = yamlProperties.getDev();
-        Map<String, String> prod = yamlProperties.getDev();
+        Map<String, String> prod = yamlProperties.getProd();
         System.out.println("environments.dev.url: " + dev.get("url"));
         System.out.println("environments.dev.name: " + dev.get("name"));
         System.out.println("environments.prod.url: " + prod.get("url"));
