@@ -23,7 +23,7 @@ apply plugin: 'propdeps-eclipse'
 
 
 war {
-	baseName = 'net..ddns.mirlang2'
+	baseName = 'net.ddns.mirlang2'
 	version = 'test'
 }
 sourceCompatibility = 1.8
