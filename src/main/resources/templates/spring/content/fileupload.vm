@@ -13,10 +13,11 @@
     </div>
 </div>
 <div class="content-box">
-    <h2>file upload code<a href="https://github.com/kangyongho/springboot-demo/blob/feature/file-upload/src/main/java/net/ddns/HelloController.java"><i class="fa fa-fw fa-github"></i></a></h2>
+    <h2>file upload code</h2>
     <p>포인트: @RequestParam, MultipartFile, transferTo</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><span>HelloController.java</span></p></div>
+        <div class="cbi-title"><p><span><a href="https://github.com/kangyongho/springboot-demo/blob/feature/file-upload/src/main/java/net/ddns/HelloController.java">
+            <i class="fa fa-fw fa-github"></i></span>HelloController.java</a></p></div>
         <p><span class="cbi-bold">import</span><span>org.springframework.web.multipart.MultipartFile;</span></p></br>
         <p><span class="cbi-annotation">@RequestMapping</span>(value="upload", method=RequestMethod.POST)</p>
         <p><span class="cbi-bold">public</span> String <span class="cbi-method">uploadFiles</span>(<span class="cbi-annotation">@RequestParam</span>("file1") MultipartFile file1,</p>
