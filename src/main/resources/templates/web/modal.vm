@@ -1,0 +1,9 @@
+<div class="content-box">
+    <h2>Boot Strap</h2>
+    <p>modal popup</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span><a href="#">
+            <i class="fa fa-fw fa-github"></i></span>modal.vm</a></p></div>
+        <p><span>modal code here</span></p>
+    </div>
+</div>

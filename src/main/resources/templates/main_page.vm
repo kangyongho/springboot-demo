@@ -31,7 +31,7 @@
                 <li><a href="#">CSS</a></li>
                 <li><a href="#">HTML</a></li>
                 <li><a href="#">JavaScript</a></li>
-                <li><a href="#">etc</a></li>
+                <li><a href="web">Web</a></li>
             </ul>
         </nav>
     </div>

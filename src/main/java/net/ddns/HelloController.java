@@ -114,4 +114,13 @@ public class HelloController {
         }
         return "redirect:spring/fileupload";
     }
+    @RequestMapping(value="web", method=RequestMethod.GET)
+    public String web() {
+        return "web/web_main";
+    }
+    @RequestMapping(value="web/{content}", method=RequestMethod.GET)
+    public String webContent(@PathVariable String content, Model model) {
+        model.addAttribute("content", content);
+        return "web/content_main";
+    }
 }
