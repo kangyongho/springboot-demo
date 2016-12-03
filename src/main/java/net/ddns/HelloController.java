@@ -6,6 +6,8 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
@@ -52,12 +54,11 @@ public class HelloController {
     @RequestMapping("spring")
     public String spring() { return "spring/spring_main"; }
 
-    @RequestMapping("spring/{start}")
-    public String startSpring(@PathVariable String start, Model model) {
-        model.addAttribute("content", start);
-        return  "spring/category/category";
+    @RequestMapping("spring/{content}")
+    public String startSpring(@PathVariable String content, Model model) {
+        model.addAttribute("content", content);
+        return  "spring/content/content_main";
     }
-
     // file download
     @RequestMapping(value = "/down", method = RequestMethod.GET)
     public void getFile(HttpServletResponse response) {
@@ -73,7 +74,6 @@ public class HelloController {
             //TODO log 처리
         }
     }
-
     @RequestMapping("pdf")
     public void getPdf(HttpServletResponse response) throws IOException {
         //System.out.println(classPathResource.getURL());
@@ -93,5 +93,25 @@ public class HelloController {
             e.printStackTrace();
         }
     }
-
+    // file upload
+    @RequestMapping(value="upload", method=RequestMethod.POST)
+    public String uploadFiles(@RequestParam("file1") MultipartFile file1, @RequestParam("file2") MultipartFile file2) throws IOException {
+        if (!file1.isEmpty()) {
+            System.out.println("file-1 info====");
+            System.out.println("OriginalFilename: " + file1.getOriginalFilename());
+            System.out.println("Name: " + file1.getName());
+            System.out.println("ContentType: " + file1.getContentType());
+            System.out.println("Size: " + file1.getSize());
+            file1.transferTo(new File("C:\\storage\\"+file1.getOriginalFilename()));
+        }
+        if (!file2.isEmpty()) {
+            System.out.println("file-2 info====");
+            System.out.println("OriginalFilename: " + file2.getOriginalFilename());
+            System.out.println("Name: " + file2.getName());
+            System.out.println("ContentType: " + file2.getContentType());
+            System.out.println("Size: " + file2.getSize());
+            file2.transferTo(new File("C:\\storage\\"+file2.getOriginalFilename()));
+        }
+        return "redirect:spring/fileupload";
+    }
 }

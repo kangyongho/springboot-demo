@@ -1,0 +1,33 @@
+<div class="content-box" xmlns="http://www.w3.org/1999/html">
+    <h2>Srping file upload</h2>
+    <p>파일 업로드 폼</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span>fileupload.vm</span></p></div>
+        <div>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <input type="file" name="file1">
+                <input type="file" name="file2">
+                <input type="submit" value="파일올리기">
+            </form>
+        </div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>file upload code<a href="#"><i class="fa fa-fw fa-github"></i></a></h2>
+    <p>포인트: @RequestParam, MultipartFile, transferTo</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span>HelloController.java</span></p></div>
+        <p><span class="cbi-bold">import</span><span>org.springframework.web.multipart.MultipartFile;</span></p></br>
+        <p><span class="cbi-annotation">@RequestMapping</span>(value="upload", method=RequestMethod.POST)</p>
+        <p><span class="cbi-bold">public</span> String <span class="cbi-method">uploadFiles</span>(<span class="cbi-annotation">@RequestParam</span>("file1") MultipartFile file1,</p>
+        <p><span class="cbi-indent-x8 cbi-annotation">@RequestParam</span><span>("file2") MultipartFile file2) <span class="cbi-bold">throws</span> IOException {</span></p></br>
+        <p><span class="cbi-indent-x4">if (!file1.isEmpty()) {</span></p>
+        <p><span class="cbi-indent-x4">file1.<span class="cbi-bold">transferTo</span>(new File("C:＼＼storage＼＼"+file1.getOriginalFilename()));</span></p>
+        <p><span class="cbi-indent-x4">}</span></p>
+        <p><span class="cbi-indent-x4">if (!file2.isEmpty()) {</span></p>
+        <p><span class="cbi-indent-x4">file2.<span class="cbi-bold">transferTo</span>(new File("C:＼＼storage＼＼"+file2.getOriginalFilename()));</span></p>
+        <p><span class="cbi-indent-x4">}</span></p>
+        <p><span class="cbi-indent-x4"><span class="cbi-bold">return</span>"redirect:spring/fileupload";</span></p>
+        <p>}</p>
+    </div>
+</div>
