@@ -13,9 +13,31 @@ img {border: 0;}
 .container-inner-right {background-color: #6db33f}
 .footer {background-color: #34302d}
 
-/* 컨텐츠 박스 꾸미기 */
-
-
+/* jquery modal popup */
+#mask {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9000;
+    background-color: #000;
+    display: none;
+}
+.window {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+}
+.window i {
+    float: right;
+    padding-top: 15px;
+    padding-right: 10px;
+    display: block;
+    cursor: pointer;
+}
+.window .overflow {
+    overflow-x: auto;
+    white-space: nowrap;
+}
 /* 599px 이하 */
 @media (max-width: 599px) {
 }
@@ -187,7 +209,7 @@ img {border: 0;}
         color: #0C4B33;
         padding-top: 10px;
         padding-bottom: 10px;
-        width: 120%;
+        width: 110%;
     }
     .content-box-inner .cbi-indent-x4 {
         padding-left: 40px;
@@ -213,7 +235,16 @@ img {border: 0;}
     .content-box-inner .cbi-bold {
         font-weight: bold;
     }
-
+    /* modal popup */
+    .window {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: none;
+        position: absolute;
+        z-index: 10000;
+        width: 80%;
+        height: auto;
+    }
     /* 푸터 조절 */
     .copyright {
         padding-left: 10px;
