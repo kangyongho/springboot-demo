@@ -57,7 +57,7 @@ public class HelloController {
     @RequestMapping("spring/{content}")
     public String startSpring(@PathVariable String content, Model model) {
         model.addAttribute("content", content);
-        return  "spring/content/content_main";
+        return  "spring/content_main";
     }
     // file download
     @RequestMapping(value = "/down", method = RequestMethod.GET)
@@ -122,5 +122,14 @@ public class HelloController {
     public String webContent(@PathVariable String content, Model model) {
         model.addAttribute("content", content);
         return "web/content_main";
+    }
+    @RequestMapping(value="javascript", method=RequestMethod.GET)
+    public String script() {
+        return "javascript/javascript_main";
+    }
+    @RequestMapping(value="javascript/{content}", method=RequestMethod.GET)
+    public String scriptContent(@PathVariable String content, Model model) {
+        model.addAttribute("content", content);
+        return "javascript/content_main";
     }
 }

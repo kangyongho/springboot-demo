@@ -14,7 +14,7 @@
 <header class="header">
 <div class="header-inner">
     <div class="header-title">
-        <a href="/"><img src="https://spring.io/img/spring-by-pivotal-9066b55828deb3c10e27e609af322c40.png", alt="spring"></a>
+        <a href="/spring"><img src="https://spring.io/img/spring-by-pivotal-9066b55828deb3c10e27e609af322c40.png", alt="spring"></a>
     </div>
     <div class="top-menu">
         <div id="top-menu-btn">
@@ -34,7 +34,7 @@
 <div class="header-sub">
 <div class="header-sub-inner">
     <div class="description">
-        <h1>Spring Boot</h1>
+        <h1>Spring Boot 시작하기</h1>
     </div>
 </div>
 </div>
@@ -42,7 +42,7 @@
 <div class="container">
     <div class="container-inner">
         <div class="content">
-            #parse ("/spring/spring_main_content.vm")
+            #parse ("/spring/${content}.vm")
         </div>
 
         <div class="right-aside">

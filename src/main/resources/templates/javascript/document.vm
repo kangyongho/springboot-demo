@@ -1,0 +1,33 @@
+<div class="content-box">
+    <h2>javascript document 객체</h2>
+    <p>document 객체 요소 조작</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span>js_doc.js</span></p></div>
+        <button id="change-color">컬러 바꾸기</button>
+        <button id="append-text">텍스트 추가</button>
+        <button id="append-class">클래스 추가</button>
+        <button id="remove">문서객체 제거</button>
+        <button id="append-html">문서객체 추가</button>
+    </div>
+</div>
+<div class="content-box">
+    <p>컬러 바꾸기</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span>테스트 결과 출력</span></p></div>
+        <h2 class="item">header-0</h2>
+        <h2 class="item select">header-1</h2>
+        <h2 class="item2">header-5</h2>
+        <h2 class="item">header-2</h2>
+        <h2 class="select">header-3</h2>
+    </div>
+</div>
+<div class="content-box">
+    <p>문서 객체 추가</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span>테스트 결과 출력</span></p></div>
+        <h2 class="remove-target">문서객체가 사라집니다.</h2>
+        <h2>아래에 문서객체가 추가됩니다.</h2>
+        <h2 class="append-html-here">header-2</h2>
+        <p class="cbi-text">여기에 텍스트가 추가(교체)됩니다.</p>
+    </div>
+</div>

@@ -24,14 +24,14 @@
             <i class="fa fa-bars"></i><span>MENU</span></div>
         <nav class="menu" id="menu">
             <ul>
-                <li><a href="spring">Spring</a></li>
+                <li><a href="/spring">Spring</a></li>
                 <li><a href="#">Django</a></li>
                 <li><a href="#">node.js</a></li>
                 <li><a href="#">RoR</a></li>
                 <li><a href="#">CSS</a></li>
                 <li><a href="#">HTML</a></li>
-                <li><a href="#">JavaScript</a></li>
-                <li><a href="web">Web</a></li>
+                <li><a href="/javascript">JavaScript</a></li>
+                <li><a href="/web">Web</a></li>
             </ul>
         </nav>
     </div>
