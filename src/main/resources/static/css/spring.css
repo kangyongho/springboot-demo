@@ -129,6 +129,17 @@ img {border: 0;}
     }
 
     /* 컨텐츠 박스 꾸미기 */
+    .container-inner h2 {
+        padding-left: 10px;
+    }
+    .container-inner p {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+    }
+    .container-inner span {
+        margin-right: 5px;
+    }
     .content {
         padding-bottom: 4px;
     }
@@ -152,7 +163,8 @@ img {border: 0;}
     .content-box p {
         padding-top: 5px;
         padding-bottom: 10px;
-        padding-left: 0px;
+        padding-left: 10px;
+        white-space: normal;
     }
     .content-box ul {
         padding-left: 30px;
@@ -170,17 +182,11 @@ img {border: 0;}
         border-radius: 4px;
         overflow-x: auto;
     }
-    .container-inner h2 {
-        padding-left: 10px;
-    }
-    .container-inner p {
+    .content-box-inner p {
         padding-top: 2px;
         padding-bottom: 2px;
         padding-left: 10px;
         white-space: nowrap;
-    }
-    .container-inner span {
-        margin-right: 5px;
     }
     .content-box-inner .cbi-title {
         background-color: #C9F0DD;

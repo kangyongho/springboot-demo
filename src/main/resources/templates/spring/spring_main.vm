@@ -21,10 +21,10 @@
             <i class="fa fa-bars"></i><span>MENU</span></div>
         <nav class="top-menu-list" id="top-menu">
             <ul>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Spring Boot</a></li>
-                <li><a href="#">Router</a></li>
-                <li><a href="#">Etc</a></li>
+                <li><a href="http://docs.spring.io/spring-boot/docs/1.4.2.RELEASE/reference/htmlsingle/">Reference</a></li>
+                <li><a href="http://docs.spring.io/spring-boot/docs/1.4.2.RELEASE/api/">API</a></li>
+                <li><a href="http://projects.spring.io/spring-boot/">spring boot</a></li>
+                <li><a href="http://projects.spring.io/spring-framework/">spring</a></li>
             </ul>
         </nav>
     </div>

@@ -2,8 +2,7 @@
     <h2>jQuery Modal</h2>
     <p>modal popup</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><span><a href="#">
-            <i class="fa fa-fw fa-github"></i></span>modal.vm</a></p></div>
+        <div class="cbi-title"><p><span><a href="#"><i class="fa fa-fw fa-github"></i></span>modal.vm</a></p></div>
         <p><span>modal code here</span></p>
     </div>
 </div>
@@ -42,7 +41,7 @@
     <p>File > Project > 로 이동</p>
     <div class="content-box-inner">
         <div class="overflow">
-        <div class="cbi-title"><p><span>hello/SampleController.java</span></p></div>
+        <div class="cbi-title"><p><span><a href="#"><i class="fa fa-fw fa-github"></i></span>hello/SampleController.java</a></p></div>
         <p><span class="cbi-bold">import</span><span>org.springframework.boot.*;</span></p>
         <p><span class="cbi-bold">import</span><span>org.springframework.boot.autoconfigure.*;</span></p>
         <p><span class="cbi-bold">import</span><span>org.springframework.stereotype.*;</span></p>
