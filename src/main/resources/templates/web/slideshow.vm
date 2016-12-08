@@ -2,7 +2,7 @@
     <h2>jQuery Slide</h2>
     <p>slide show</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><span><a href="#"><i class="fa fa-fw fa-github"></i></span>modal.vm</a></p></div>
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> modal.vm</a></p></div>
         <p><span>slide show code here</span></p>
         <div><pre><code class="java">
 public class AppleComparator {
