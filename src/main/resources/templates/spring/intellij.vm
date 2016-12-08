@@ -1,0 +1,52 @@
+<div class="content-box" xmlns="http://www.w3.org/1999/html">
+    <h2>Gradle 주요설정 (default 설정에 추가)</h2>
+    <p>File > New > Project > Spring Initializr로 이동.</p>
+    <p>gradle로 프로젝트 타입을 설정하고 web과 Velocity 또는 Thymeleaf으로 초기 템플릿을 선택한다.</p>
+    <p>velocity, 외부 tomcat, war 파일 등을 설정한다.</p>
+    <p>라이브러리 의존파일을 추가할 때는 dependencies에 넣어주면 된다.</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span><a href="https://github.com/kangyongho/springboot-demo/blob/feature/subpage-01/build.gradle"><i class="fa fa-fw fa-github"></i></span>build.gradle</a></p></div>
+<div><pre><code>apply plugin: 'war' : tomcat에서 구동할 수 있는 war파일을 만들기 위한 설정
+war {
+<span class="cbi-indent-x4">baseName = 'ROOT' :war파일의 이름을 설정한다. 추가로 버전을 설정할 수 도 있다.</span>
+}
+dependencies {
+<span class="cbi-indent-x4">compile('org.springframework.boot:spring-boot-starter-velocity:1.4.2.RELEASE') :velocity 템플릿엔진 설정</span>
+<span class="cbi-indent-x4">compile('org.springframework.boot:spring-boot-starter-tomcat:1.4.2.RELEASE') :외부 톰캣에서 실행하기 위한 설정</span>
+<span class="cbi-indent-x4">providedRuntime('org.springframework.boot:spring-boot-starter-tomcat') :외부 톰캣에서 실행하기 위한 설정</span>
+}
+</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>뷰 페이지 생성</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span><a href="https://github.com/kangyongho/springboot-demo/blob/feature/subpage-01/src/main/resources/templates/hello.vm"><i class="fa fa-fw fa-github"></i></span>hello.vm</a></p></div>
+<div><pre><code>&lt;h1&gt;Hello! ${name}&lt;/h1&gt; : name에 값을 전달한다.</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>컨트롤러 생성</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span><a href="https://github.com/kangyongho/springboot-demo/blob/feature/subpage-01/src/main/java/net/ddns/HelloController.java"><i class="fa fa-fw fa-github"></i></span>HelloController.java</a></p></div>
+<div><pre><code>@Controller
+public class HelloController {
+<span class="cbi-indent-x4">@RequestMapping("hello")</span>
+<span class="cbi-indent-x4">public String index (Model model) {</span>
+<span class="cbi-indent-x8">model.addAttribute("name", "Spring from daniel");</span>
+<span class="cbi-indent-x8">return</span><span>"hello";</span>
+<span class="cbi-indent-x4">}</span>
+<span>}</span></code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>스프링 시작지점 설정  <a href="/hello">(실행)</a></h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span><a href="https://github.com/kangyongho/springboot-demo/blob/feature/subpage-01/src/main/java/net/ddns/SpringbootDemoApplication.java"><i class="fa fa-fw fa-github"></i></span>SpringbootDemoApplication.java</a></p></div>
+<div><pre><code>@SpringBootApplication
+<span>public class SpringbootDemoApplication {</span>
+<span class="cbi-indent-x4">public static void main (String[] args) {</span>
+<span class="cbi-indent-x8">SpringApplication.run(SpringbootDemoApplication.class, args);</span>
+<span>}</span></code></pre></div>
+    </div>
+</div>

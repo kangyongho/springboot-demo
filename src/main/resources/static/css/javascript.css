@@ -131,6 +131,15 @@ img {border: 0;}
     }
 
     /* 컨텐츠 박스 꾸미기 */
+    .container-inner h2 {
+        padding-left: 10px;
+    }
+    .container-inner p {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+        white-space: nowrap;
+    }
     .content {
         padding-bottom: 4px;
     }
@@ -172,48 +181,22 @@ img {border: 0;}
         border-radius: 4px;
         overflow-x: auto;
     }
-    .container-inner h2 {
+    .content-box-inner code {
+        background-color: #fff;
         padding-left: 10px;
-    }
-    .container-inner p {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 10px;
-        white-space: nowrap;
-    }
-    .container-inner span {
-        margin-right: 5px;
     }
     .content-box-inner .cbi-title {
         background-color: #C9F0DD;
         color: #0C4B33;
         padding-top: 10px;
         padding-bottom: 10px;
-        width: 120%;
+        width: 100%;
     }
     .content-box-inner .cbi-indent-x4 {
         padding-left: 40px;
     }
     .content-box-inner .cbi-indent-x8 {
         padding-left: 70px;
-    }
-    .content-box-inner .cbi-annotation {
-        color: #3c5d5d;
-        font-weight: bold;
-    }
-    .content-box-inner .cbi-class {
-        color: #3c5d5d;
-        font-weight: bold;
-    }
-    .content-box-inner .cbi-method {
-        color: #990000;
-        font-weight: bold;
-    }
-    .container-inner .cbi-parameter {
-        color: #3c5d5d;
-    }
-    .content-box-inner .cbi-bold {
-        font-weight: bold;
     }
 
     /* 푸터 조절 */
@@ -319,6 +302,14 @@ img {border: 0;}
     }
 
     /* 컨텐츠 박스 꾸미기 */
+    .container-inner h2 {
+        padding-left: 10px;
+    }
+    .container-inner p {
+        padding-top: 2px;
+        padding-bottom: 2px;
+        padding-left: 10px;
+    }
     .content {
         padding-bottom: 20px;
     }
@@ -360,16 +351,9 @@ img {border: 0;}
         border-radius: 4px;
         overflow-x: auto;
     }
-    .container-inner h2 {
+    .content-box-inner code {
+        background-color: #fff;
         padding-left: 10px;
-    }
-    .container-inner p {
-        padding-top: 2px;
-        padding-bottom: 2px;
-        padding-left: 10px;
-    }
-    .container-inner span {
-        margin-right: 5px;
     }
     .content-box-inner .cbi-title {
         background-color: #C9F0DD;
@@ -383,24 +367,6 @@ img {border: 0;}
     }
     .content-box-inner .cbi-indent-x8 {
         padding-left: 70px;
-    }
-    .content-box-inner .cbi-annotation {
-        color: #3c5d5d;
-        font-weight: bold;
-    }
-    .content-box-inner .cbi-class {
-        color: #3c5d5d;
-        font-weight: bold;
-    }
-    .content-box-inner .cbi-method {
-        color: #990000;
-        font-weight: bold;
-    }
-    .container-inner .cbi-parameter {
-        color: #3c5d5d;
-    }
-    .content-box-inner .cbi-bold {
-        font-weight: bold;
     }
 
     /* 오른쪽 서브 메뉴 꾸미기 */

@@ -6,16 +6,16 @@
     </ul>
 </div>
 <div class="content-box">
+    <h2>slide show</h2>
+    <p>슬라이드 효과</p>
+    <ul>
+        <li><a href="/web/slideshow">slide show</a></li>
+    </ul>
+</div>
+<div class="content-box">
     <h2>drop down menu</h2>
     <p>드롭다운 메뉴</p>
     <ul>
         <li><a href="#">drop down menu</a></li>
-    </ul>
-</div>
-<div class="content-box">
-    <h2>slide show</h2>
-    <p>슬라이드 효과</p>
-    <ul>
-        <li><a href="#">slide show</a></li>
     </ul>
 </div>

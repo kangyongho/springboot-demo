@@ -2,8 +2,8 @@
     <h2>Spring Boot 시작하기</h2>
     <p>프로젝트 만들기</p>
     <ul>
-        <li><a href="/spring/start">InteliJ로 시작하기</a></li>
-        <li><a href="/spring/start">Eclipse로 시작하기</a></li>
+        <li><a href="/spring/intellij">InteliJ로 시작하기</a></li>
+        <li><a href="/spring/eclipse">Eclipse로 시작하기</a></li>
     </ul>
 </div>
 <div class="content-box">

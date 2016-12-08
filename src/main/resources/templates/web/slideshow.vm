@@ -1,0 +1,20 @@
+<div class="content-box">
+    <h2>jQuery Slide</h2>
+    <p>slide show</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><span><a href="#"><i class="fa fa-fw fa-github"></i></span>modal.vm</a></p></div>
+        <p><span>slide show code here</span></p>
+        <div><pre><code class="java">
+public class AppleComparator {
+
+public static void main(String[] args) {
+/* 1. 프리미티브 타입 배열 정렬 (정수) */
+System.out.println("1-1. 프리미티브 타입 배열 정렬 (정수)");
+int[] intArrarys = {3, 1, 4, 2, 5};
+Arrays.sort(intArrarys);
+for (int array : intArrarys) {
+System.out.printf("%d ", array);
+}
+        </code></pre></div>
+    </div>
+</div>
