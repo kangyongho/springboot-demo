@@ -1,8 +1,9 @@
 <div class="content-box">
     <h2>jQuery Slide</h2>
-    <p>slide show</p>
+    <p>animation, move panel 방식</p>
+    <p>슬라이더 패널 넓이, 이미지 넓이를 가변으로 생성해야 반응형 대응이 된다.(미구현)</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slideshow-canvas">
             <div class="slider-image-panel">
                 <img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/>
@@ -30,19 +31,74 @@
     <h2>jQuery Slide</h2>
     <p>slide show</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div><pre><code>&lt;div class="slideshow-canvas"&gt;
+&lt;div class="slider-image-panel"&gt;
+    &lt;img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;
+    &lt;img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/&gt;
+    &lt;img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;
+&lt;/div&gt;
+&lt;div class="slider-text-panel"&gt;
+    &lt;div class="slider-text"&gt;
+        &lt;p&gt;1 / 3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="slider-text"&gt;
+        &lt;p&gt;2 / 3&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="slider-text"&gt;
+        &lt;p&gt;3 / 3&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="slider-control-panel"&gt;
+    &lt;span class="control-button"&gt;&lt;/span&gt;&lt;span class="control-button"&gt;&lt;/span&gt;&lt;span class="control-button"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>jQuery Slide</h2>
+    <p>ul 리스트 슬라이드 방식</p>
+    <p>겹치는 박스를 두개 만들고 상대속성을 준다. 안쪽 박스를 움직인다.</p>
+    <p>반응형 대응</p>
+    <p>ul 넓이 = 이미지 갯수 * 100%, li 넓이 = 100% / 이미지 갯수</p>
+    <p>이미지는 max-width를 지정해준다.</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="slider-box">
+            <div class="slider-panel">
+                <ul>
+                    <li><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
+                    <li><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
+                    <li><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                </ul>
+            </div>
+            <div class="slider-control-panel-2">
+                <span class="control-button-2"></span><span class="control-button-2"></span><span class="control-button-2"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>이미지 사이즈 조절</h2>
+    <p>부모 태그를 벗어나지 않는 이미지</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div>
+            <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></div>
+            <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></div>
+            <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></div>
+        </div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>jQuery Slide</h2>
+    <p>slide show</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <p><span>slide show code here</span></p>
         <div><pre><code class="java">
-public class AppleComparator {
-
-public static void main(String[] args) {
-/* 1. 프리미티브 타입 배열 정렬 (정수) */
-System.out.println("1-1. 프리미티브 타입 배열 정렬 (정수)");
-int[] intArrarys = {3, 1, 4, 2, 5};
-Arrays.sort(intArrarys);
-for (int array : intArrarys) {
-System.out.printf("%d ", array);
-}
         </code></pre></div>
     </div>
 </div>

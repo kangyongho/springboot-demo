@@ -152,6 +152,13 @@ button {margin-left: 2px; margin-top: 2px; padding: 3px; background-color: #C9F0
     }
 
     /* 컨텐츠 박스 꾸미기 */
+    .container-inner h2 {
+        /*padding-left: 10px;*/
+    }
+    .container-inner p {
+        padding-left: 10px;
+        white-space: nowrap;
+    }
     .content {
         padding-bottom: 4px;
     }
@@ -174,6 +181,7 @@ button {margin-left: 2px; margin-top: 2px; padding: 3px; background-color: #C9F0
     }
     .content-box p {
         padding-left: 0px;
+        white-space: normal;
     }
     .content-box ul {
         padding-left: 30px;
@@ -190,13 +198,6 @@ button {margin-left: 2px; margin-top: 2px; padding: 3px; background-color: #C9F0
         -moz-border-radius: 4px;
         border-radius: 4px;
         overflow-x: auto;
-    }
-    .container-inner h2 {
-        padding-left: 10px;
-    }
-    .container-inner p {
-        padding-left: 10px;
-        white-space: nowrap;
     }
     .content-box-inner code {
         background-color: #fff;
@@ -357,6 +358,7 @@ button {margin-left: 2px; margin-top: 2px; padding: 3px; background-color: #C9F0
     }
     .content-box p {
         padding-left: 10px;
+        white-space: normal;
     }
     .content-box ul {
         padding-left: 30px;

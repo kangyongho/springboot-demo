@@ -29,7 +29,7 @@ $(document).ready(function() {
         });
     }
 
-    // 반응형 대응 (캔버스, 패널, 이미지 사이즈를 고정으로 하면 제대로 적용할 수 없다)
+    // 반응형 대응 (캔버스, 패널, 이미지 사이즈를 고정으로 하면 사이즈 조절이 안된다.)
     var windowWidth = $(window).width();
 
     // 텍스트 data-index 할당 (위치 파악 목적)
@@ -54,10 +54,17 @@ $(document).ready(function() {
     var initialSlider = 0;
     moveSlider(initialSlider);
 
-    function autoSlide() {
-        initialSlider++;
-        if (initialSlider > 2) { initialSlider = 0; }
-        setTimeout(moveSlider(initialSlider), 20000);
+    // ul 리스트 슬라이더
+    function moveListSlider(index) {
+        var willMoveLeft = -(index * 100);
+        $('.slider-panel').animate({left: willMoveLeft + '%'}, 'slow');
     }
-    //autoSlide();
+
+    $('.control-button-2').each(function(index) {
+        $(this).attr('data-index', index);
+    }).click(function() {
+            var index = $(this).attr('data-index');
+            moveListSlider(index);
+    });
+
 });
