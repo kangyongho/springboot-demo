@@ -10,26 +10,46 @@
     overflow: hidden;
     width: 100%;
 }
-.slider-panel {
+.slider-img-panel {
     position: relative;
     left: 0%;
 }
-.slider-panel ul {
+.slider-img-panel ul {
     padding: 0px;
     margin: 0px;
     width: 300%;
 }
-.slider-panel li {
+.slider-img-panel li {
     float: left;
     list-style-type: none;
     padding: 0px;
     margin: 0px;
     width: 33.333333%;
 }
-.slider-panel img {
+.slider-img-panel img {
     max-width: 100%;
 }
-/* 슬라이더 컨트롤 */
+/* 슬라이더 컨트롤 좌우 */
+.slider-angle-panel {
+    position: absolute;
+    width: 100%;
+    top: 35%;
+}
+.slider-angle-panel i {
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.6s ease;
+}
+.slider-angle-panel i:hover {
+    color: #717171;
+}
+.sap-left {
+    float: left;
+}
+.sap-right {
+    float: right;
+}
+/* 슬라이더 컨트롤 하단 */
 .slider-control-panel-2 {
     position: absolute;
     left: 45%;

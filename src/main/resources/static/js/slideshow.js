@@ -54,17 +54,69 @@ $(document).ready(function() {
     var initialSlider = 0;
     moveSlider(initialSlider);
 
-    // ul 리스트 슬라이더
+    /* ul 리스트 슬라이더 */
     function moveListSlider(index) {
         var willMoveLeft = -(index * 100);
-        $('.slider-panel').animate({left: willMoveLeft + '%'}, 'slow');
+        $('.slider-img-panel').animate({left: willMoveLeft + '%'}, 'slow');
     }
-
+    // 위치 파악 인덱스 부여 - 하단
     $('.control-button-2').each(function(index) {
         $(this).attr('data-index', index);
     }).click(function() {
-            var index = $(this).attr('data-index');
-            moveListSlider(index);
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        // 좌우 순서: 2,1 / 0,2 / 1,0
+        switch (index) {
+            case '0':
+                $('.sap-left').attr('data-index', 2);
+                $('.sap-right').attr('data-index', 1);
+                break;
+            case '1':
+                $('.sap-left').attr('data-index', 0);
+                $('.sap-right').attr('data-index', 2);
+                break;
+            case '2':
+                $('.sap-left').attr('data-index', 1);
+                $('.sap-right').attr('data-index', 0);
+                break;
+        }
+    });
+    // 위치 파악 인덱스 부여 - 좌우
+    $('.sap-left').attr('data-index', 2).click(function(){
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        switch (index) {
+            case '0':
+                $('.sap-left').attr('data-index', 2);
+                $('.sap-right').attr('data-index', 1);
+                break;
+            case '1':
+                $('.sap-left').attr('data-index', 0);
+                $('.sap-right').attr('data-index', 2);
+                break;
+            case '2':
+                $('.sap-left').attr('data-index', 1);
+                $('.sap-right').attr('data-index', 0);
+                break;
+        }
+    });
+    $('.sap-right').attr('data-index', 1).click(function(){
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        switch (index) {
+            case '0':
+                $('.sap-left').attr('data-index', 2);
+                $('.sap-right').attr('data-index', 1);
+                break;
+            case '1':
+                $('.sap-left').attr('data-index', 0);
+                $('.sap-right').attr('data-index', 2);
+                break;
+            case '2':
+                $('.sap-left').attr('data-index', 1);
+                $('.sap-right').attr('data-index', 0);
+                break;
+        }
     });
 
 });
