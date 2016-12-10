@@ -3,7 +3,7 @@
     <p>animation, move panel 방식</p>
     <p>슬라이더 패널 넓이, 이미지 넓이를 가변으로 생성해야 반응형 대응이 된다.(미구현)</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slideshow-canvas">
             <div class="slider-image-panel">
                 <img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/>
@@ -32,7 +32,7 @@
     <h2>jQuery Slide</h2>
     <p>animation, move panel 방식</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div><pre><code>&lt;div class="slideshow-canvas"&gt;
 &lt;div class="slider-image-panel"&gt;
     &lt;img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;
@@ -65,7 +65,7 @@
     <p>ul 넓이 = 이미지 갯수 * 100%, li 넓이 = 100% / 이미지 갯수</p>
     <p>이미지는 max-width를 지정해준다.</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slider-box">
             <div class="slider-img-panel">
                 <ul>
@@ -88,7 +88,7 @@
     <h2>jQuery Slide</h2>
     <p>ul 리스트 슬라이드 방식</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div><pre><code>&lt;div class="slider-box"&gt;
 &lt;div class="slider-img-panel"&gt;
     &lt;ul&gt;
@@ -113,69 +113,69 @@
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/css/slideshow.css"><i class="fa fa-fw fa-github"></i> slideshow.css</a></p></div>
         <div><pre><code>.slider-box {
-position: relative;
-overflow: hidden;
-width: 100%;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
 }
 .slider-img-panel {
-position: relative;
-left: 0%;
+    position: relative;
+    left: 0%;
 }
 .slider-img-panel ul {
-padding: 0px;
-margin: 0px;
-width: 300%;
+    padding: 0px;
+    margin: 0px;
+    width: 300%;
 }
 .slider-img-panel li {
-float: left;
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-width: 33.333333%;
+    float: left;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 33.333333%;
 }
 .slider-img-panel img {
-max-width: 100%;
+    max-width: 100%;
 }
 /* 슬라이더 컨트롤 좌우 */
 .slider-angle-panel {
-position: absolute;
-width: 100%;
-top: 35%;
+    position: absolute;
+    width: 100%;
+    top: 35%;
 }
 .slider-angle-panel i {
-cursor: pointer;
-color: #ffffff;
-transition: background-color 0.6s ease;
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.6s ease;
 }
 .slider-angle-panel i:hover {
-color: #717171;
+    color: #717171;
 }
 .sap-left {
-float: left;
+    float: left;
 }
 .sap-right {
-float: right;
+    float: right;
 }
 /* 슬라이더 컨트롤 하단 */
 .slider-control-panel-2 {
-position: absolute;
-left: 45%;
-bottom: 10px;
+    position: absolute;
+    left: 45%;
+    bottom: 10px;
 }
 .control-button-2 {
-cursor: pointer;
-width: 13px;
-height: 13px;
-margin-right: 10px;
-background: #ffffff;
--webkit-border-radius: 50%;
--moz-border-radius: 50%;
-border-radius: 50%;
-display: inline-block;
-transition: background-color 0.6s ease;
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    background: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
 }
 .control-button-2:hover {
-background-color: #717171;
+    background-color: #717171;
 }</code></pre></div>
     </div>
 </div>
@@ -186,67 +186,67 @@ background-color: #717171;
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/js/slideshow.js"><i class="fa fa-fw fa-github"></i> slideshow.js</a></p></div>
         <div><pre><code>/* ul 리스트 슬라이더 */
 function moveListSlider(index) {
-var willMoveLeft = -(index * 100);
-$('.slider-img-panel').animate({left: willMoveLeft + '%'}, 'slow');
+    var willMoveLeft = -(index * 100);
+    $('.slider-img-panel').animate({left: willMoveLeft + '%'}, 'slow');
 }
 // 위치 파악 인덱스 부여 - 하단
 $('.control-button-2').each(function(index) {
-$(this).attr('data-index', index);
+        $(this).attr('data-index', index);
 }).click(function() {
-var index = $(this).attr('data-index');
-moveListSlider(index);
-// 좌우 순서: 2,1 / 0,2 / 1,0
-switch (index) {
-case '0':
-$('.sap-left').attr('data-index', 2);
-$('.sap-right').attr('data-index', 1);
-break;
-case '1':
-$('.sap-left').attr('data-index', 0);
-$('.sap-right').attr('data-index', 2);
-break;
-case '2':
-$('.sap-left').attr('data-index', 1);
-$('.sap-right').attr('data-index', 0);
-break;
-}
+    var index = $(this).attr('data-index');
+    moveListSlider(index);
+    // 좌우 순서: 2,1 / 0,2 / 1,0
+    switch (index) {
+        case '0':
+            $('.sap-left').attr('data-index', 2);
+            $('.sap-right').attr('data-index', 1);
+            break;
+        case '1':
+            $('.sap-left').attr('data-index', 0);
+            $('.sap-right').attr('data-index', 2);
+            break;
+        case '2':
+            $('.sap-left').attr('data-index', 1);
+            $('.sap-right').attr('data-index', 0);
+            break;
+    }
 });
 // 위치 파악 인덱스 부여 - 좌우
 $('.sap-left').attr('data-index', 2).click(function(){
-var index = $(this).attr('data-index');
-moveListSlider(index);
-switch (index) {
-case '0':
-$('.sap-left').attr('data-index', 2);
-$('.sap-right').attr('data-index', 1);
-break;
-case '1':
-$('.sap-left').attr('data-index', 0);
-$('.sap-right').attr('data-index', 2);
-break;
-case '2':
-$('.sap-left').attr('data-index', 1);
-$('.sap-right').attr('data-index', 0);
-break;
-}
+    var index = $(this).attr('data-index');
+    moveListSlider(index);
+    switch (index) {
+        case '0':
+            $('.sap-left').attr('data-index', 2);
+            $('.sap-right').attr('data-index', 1);
+            break;
+        case '1':
+            $('.sap-left').attr('data-index', 0);
+            $('.sap-right').attr('data-index', 2);
+            break;
+        case '2':
+            $('.sap-left').attr('data-index', 1);
+            $('.sap-right').attr('data-index', 0);
+            break;
+    }
 });
 $('.sap-right').attr('data-index', 1).click(function(){
-var index = $(this).attr('data-index');
-moveListSlider(index);
-switch (index) {
-case '0':
-$('.sap-left').attr('data-index', 2);
-$('.sap-right').attr('data-index', 1);
-break;
-case '1':
-$('.sap-left').attr('data-index', 0);
-$('.sap-right').attr('data-index', 2);
-break;
-case '2':
-$('.sap-left').attr('data-index', 1);
-$('.sap-right').attr('data-index', 0);
-break;
-}
+    var index = $(this).attr('data-index');
+    moveListSlider(index);
+    switch (index) {
+        case '0':
+            $('.sap-left').attr('data-index', 2);
+            $('.sap-right').attr('data-index', 1);
+            break;
+        case '1':
+            $('.sap-left').attr('data-index', 0);
+            $('.sap-right').attr('data-index', 2);
+            break;
+        case '2':
+            $('.sap-left').attr('data-index', 1);
+            $('.sap-right').attr('data-index', 0);
+            break;
+        }
 });</code></pre></div>
     </div>
 </div>
@@ -255,7 +255,7 @@ break;
     <h2>이미지 사이즈 조절</h2>
     <p>부모 태그를 벗어나지 않는 이미지</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/3b8b4ac602430bbe29df70a4b5d1e029ed236590/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div>
             <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></div>
             <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></div>
@@ -269,8 +269,28 @@ break;
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/css/slideshow.css"><i class="fa fa-fw fa-github"></i> slideshow.css</a></p></div>
         <div><pre><code>.test-img {
-max-width: 100%;
-height: auto;
+    max-width: 100%;
+    height: auto;
+}</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>중앙정렬</h2>
+    <p>absolute 속성 중앙정렬</p>
+    <p>left 또는 top 50%, 해당 요소의 넓의 / 2의 margin-left 음수값</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/css/slideshow.css"><i class="fa fa-fw fa-github"></i> slideshow.css</a></p></div>
+<div><pre><code>.slider-angle-panel {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-top: -35px;
+}
+.slider-control-panel-2 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -34.5px;
 }</code></pre></div>
     </div>
 </div>
