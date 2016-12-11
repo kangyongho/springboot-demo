@@ -1,4 +1,25 @@
 <div class="content-box">
+    <h2>touch swipe</h2>
+    <p>TODO 리팩토링</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="slider-box-3">
+            <div class="slider-img-panel-3">
+                <ul>
+                    <li class="slider-image-panel-li"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
+                    <li class="slider-image-panel-li"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
+                    <li class="slider-image-panel-li"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                </ul>
+            </div>
+            <div class="sap-left-3"><i class="fa fa-angle-left fa-5x"></i></div>
+            <div class="sap-right-3"><i class="fa fa-angle-right fa-5x"></i></div>
+            <div class="slider-control-panel-3">
+                <span class="control-button-3"></span><span class="control-button-3"></span><span class="control-button-3"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-box">
     <h2>jQuery Slide</h2>
     <p>animation, move panel 방식</p>
     <p>슬라이더 패널 넓이, 이미지 넓이를 가변으로 생성해야 반응형 대응이 된다.(미구현)</p>
