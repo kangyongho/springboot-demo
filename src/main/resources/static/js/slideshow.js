@@ -54,7 +54,7 @@ $(document).ready(function() {
     /* ul 리스트 슬라이더 */
     function moveListSlider(index) {
         var willMoveLeft = -(index * 100);
-        $('.slider-img-panel').animate({left: willMoveLeft + '%'}, 'slow');
+        $('.slider-box > .slider-img-panel').animate({left: willMoveLeft + '%'}, 'slow');
     }
     // 좌우 컨트롤 패널 인덱스 재설정 함수
     function setAngleIndex(index) {

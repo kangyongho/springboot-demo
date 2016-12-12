@@ -182,7 +182,7 @@
         <div><pre><code>/* ul 리스트 슬라이더 */
 function moveListSlider(index) {
     var willMoveLeft = -(index * 100);
-    $('.slider-img-panel').animate({left: willMoveLeft + '%'}, 'slow');
+    $('.slider-box > .slider-img-panel').animate({left: willMoveLeft + '%'}, 'slow');
 }
 // 위치 파악 인덱스 부여 - 하단
 $('.control-button-2').each(function(index) {
