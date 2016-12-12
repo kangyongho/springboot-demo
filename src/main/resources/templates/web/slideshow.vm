@@ -705,7 +705,7 @@ $('.sap-right').attr('data-index', 1).click(function(){
 
     // 위치 파악 인덱스 부여 - 하단
     control_button.each(function(index) {
-        $(this).attr('data-index', index);
+        $(this).attr('data-index', index+1);
     }).click(function() {
         var index = $(this).attr('data-index');
         moveListSlider(index);
