@@ -1,7 +1,5 @@
 <div class="content-box">
-    <h2>jQuery Slide</h2>
-    <p>animation, move panel 방식</p>
-    <p>슬라이더 패널 넓이, 이미지 넓이를 가변으로 생성해야 반응형 대응이 된다.(미구현)</p>
+    <h2>jQuery Basic Slide</h2>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slideshow-canvas">
@@ -27,10 +25,10 @@
         </div>
     </div>
 </div>
-
 <div class="content-box">
-    <h2>jQuery Slide</h2>
+    <h2>jQuery Basic Slide</h2>
     <p>animation, move panel 방식</p>
+    <p>슬라이더 패널 넓이, 이미지 넓이를 가변으로 생성해야 반응형 대응이 된다.(미구현)</p>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div><pre><code>&lt;div class="slideshow-canvas"&gt;
@@ -58,12 +56,7 @@
 </div>
 
 <div class="content-box">
-    <h2>jQuery Slide</h2>
-    <p>ul 리스트 슬라이드 방식</p>
-    <p>겹치는 박스를 두개 만들고 상대속성을 준다. 안쪽 박스를 움직인다.</p>
-    <p>반응형 대응</p>
-    <p>ul 넓이 = 이미지 갯수 * 100%, li 넓이 = 100% / 이미지 갯수</p>
-    <p>이미지는 max-width를 지정해준다.</p>
+    <h2>jQuery List Slide</h2>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slider-box">
@@ -85,8 +78,12 @@
     </div>
 </div>
 <div class="content-box">
-    <h2>jQuery Slide</h2>
+    <h2>jQuery List Slide</h2>
     <p>ul 리스트 슬라이드 방식</p>
+    <p>겹치는 박스를 두개 만들고 상대속성을 준다. 안쪽 박스를 움직인다.</p>
+    <p>반응형 대응 방식</p>
+    <p>ul 넓이 = 이미지 갯수 * 100%, li 넓이 = 100% / 이미지 갯수</p>
+    <p>이미지는 max-width를 지정해준다.</p>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div><pre><code>&lt;div class="slider-box"&gt;
@@ -108,8 +105,7 @@
     </div>
 </div>
 <div class="content-box">
-    <h2>jQuery Slide</h2>
-    <p>ul 리스트 슬라이드 방식</p>
+    <h2>jQuery List Slide</h2>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/css/slideshow.css"><i class="fa fa-fw fa-github"></i> slideshow.css</a></p></div>
         <div><pre><code>.slider-box {
@@ -180,8 +176,7 @@
     </div>
 </div>
 <div class="content-box">
-    <h2>jQuery Slide</h2>
-    <p>ul 리스트 슬라이드 방식 (TODO 리팩토링)</p>
+    <h2>jQuery List Slide</h2>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/js/slideshow.js"><i class="fa fa-fw fa-github"></i> slideshow.js</a></p></div>
         <div><pre><code>/* ul 리스트 슬라이더 */
@@ -253,10 +248,6 @@ $('.sap-right').attr('data-index', 1).click(function(){
 
 <div class="content-box">
     <h2>jQuery touch swipe</h2>
-    <p>plug-in 적용 (모듈화)</p>
-    <p>함수를 jQuery fn에 추가해서 사용하면 독립적인 객체로 작동하게 되고, 다른 영역과 분리가 되므로 플러그인 하나로 재사용이 가능하다.</p>
-    <p>css 제공, 적용 대상 태그, 메서드, 옵션을 고려해서 제작한다.</p>
-    <p>이점: 전역변수 핸들링에서 조금 자유로워 진다.</p>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slider-box-1">
@@ -275,11 +266,228 @@ $('.sap-right').attr('data-index', 1).click(function(){
         </div>
     </div>
 </div>
-
 <div class="content-box">
     <h2>jQuery touch swipe</h2>
-    <p>plug-in 재사용</p>
-    <p>클래스명, CSS 추가</p>
+    <p>plug-in 적용 (모듈화)</p>
+    <p>함수를 jQuery fn에 추가해서 사용하면 독립적인 객체로 작동하게 되고, 다른 영역과 분리가 되므로 플러그인 하나로 재사용이 가능하다.</p>
+    <p>css 제공, 적용 대상 태그, 메서드, 옵션을 고려해서 제작한다.</p>
+    <p>이점: 전역변수 핸들링에서 조금 자유로워 진다.</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div><pre><code>&lt;div class="slider-box-1"&gt;
+&lt;div class="slider-img-panel"&gt;
+    &lt;ul&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="control-left"&gt;&lt;i class="fa fa-angle-left fa-5x"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="control-right"&gt;&lt;i class="fa fa-angle-right fa-5x"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="slider-control-panel"&gt;
+    &lt;span class="control-button"&gt;&lt;/span&gt;&lt;span class="control-button"&gt;&lt;/span&gt;&lt;span class="control-button"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>jQuery touch swipe</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/css/slideshow.css"><i class="fa fa-fw fa-github"></i> slideshow.css</a></p></div>
+        <div><pre><code>/* 터치 이벤트 swipe */
+/* 슬라이더 박스로 객체를 구분한다. */
+/* 첫번째 슬라이드 */
+.slider-box-1 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+/* 두번째 슬라이드 박스 추가 */
+.slider-box-2 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.slider-img-panel {
+    position: relative;
+    left: 0%;
+}
+.slider-img-panel ul {
+    padding: 0px;
+    margin: 0px;
+    width: 300%;
+}
+.slider-img-panel li {
+    float: left;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 33.333333%;
+}
+.slider-img-panel img {
+    max-width: 100%;
+}
+/* 슬라이더 컨트롤 좌우 */
+.control-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    left: 0%;
+}
+.control-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    right: 0%;
+}
+.control-left i, .control-right i {
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.6s ease;
+}
+.control-left i:hover, .control-right i:hover {
+    color: #717171;
+}
+/* 슬라이더 컨트롤 하단 */
+.slider-control-panel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -34.5px;
+}
+.control-button {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    background: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.control-button:hover {
+    background-color: #717171;
+}</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>jQuery touch swipe</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/js/slideshow-plugin.js"><i class="fa fa-fw fa-github"></i> slideshow-plugin.js</a></p></div>
+        <div><pre><code>$.fn.slideshow = function (options) {
+    /* 터치 swipe 슬라이더 모듈 */
+    /* 사용법: slider-box 클래스 속성을 부여하고 slideshow 함수를 호출한다. */
+    /* 기준: slider-box 클래스 이름 */
+    var target = $(this);
+    var slider_img_panel = target.children('.slider-img-panel');
+    var slider_img = target.find('.slider-img');
+    var control_left = target.children('.control-left');
+    var control_right = target.children('.control-right');
+    var control_button = target.find('.control-button');
+
+    var touchstart_x = 0;
+    var move_ds = 0;
+    var percent = 0;
+    var windowWidth = $(window).width();
+
+    function moveListSlider(index) {
+        var willMoveLeft = -(index * 100);
+        slider_img_panel.animate({left: willMoveLeft + '%'}, 'fast');
+    }
+    // 터치 드래그 하는 동안 DOM 이 따라오게 한다.
+    function moveListSlider_1(move_ds) {
+        slider_img_panel.css('left', move_ds+'%');
+    }
+
+    // 좌우 컨트롤 패널 인덱스 재설정 함수
+    function setAngleIndex(index) {
+        // 좌우 순서: 2,1 / 0,2 / 1,0
+        switch (index) {
+            case '0':
+                control_left.attr('data-index', 2);
+                control_right.attr('data-index', 1);
+                percent = 0;
+                break;
+            case '1':
+                control_left.attr('data-index', 0);
+                control_right.attr('data-index', 2);
+                percent = -100;
+                break;
+            case '2':
+                control_left.attr('data-index', 1);
+                control_right.attr('data-index', 0);
+                percent = -200;
+                break;
+        }
+    }
+
+    // 위치 파악 인덱스 부여 - 하단
+    control_button.each(function(index) {
+        $(this).attr('data-index', index);
+    }).click(function() {
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        setAngleIndex(index);
+    });
+    // 위치 파악 인덱스 부여 - 좌우
+    control_left.attr('data-index', 2).click(function(){
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        setAngleIndex(index);
+    });
+    control_right.attr('data-index', 1).click(function(){
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        setAngleIndex(index);
+    });
+
+    // 터치 swipe 이벤트
+    slider_img.on('touchstart', function(e){
+        var event = e.originalEvent;
+        touchstart_x = event.touches[0].pageX;
+        e.preventDefault();
+    });
+    slider_img.on('touchmove', function(e){
+        var event = e.originalEvent;
+        var drag_dist;
+        var scroll_dist;
+        drag_dist = event.touches[0].pageX - touchstart_x;
+        move_ds = ( drag_dist / windowWidth ) * 100;
+        moveListSlider_1(percent+move_ds);
+        e.preventDefault();
+    });
+    slider_img.on('touchend', function(e){
+        if ( Math.abs( move_ds ) > 15 && (move_ds < 0) ) {
+            // 오른쪽 이동
+            var index = control_right.attr('data-index');
+            moveListSlider(index);
+            setAngleIndex(index);
+        } else if ( Math.abs( move_ds ) > 15 && (move_ds > 0) ) {
+            // 왼쪽 이동
+            var index = control_left.attr('data-index');
+            moveListSlider(index);
+            setAngleIndex(index);
+        }
+        // 페이지 전환되지 않았을 때 원상복귀
+        if( Math.abs( move_ds ) < 15 && (move_ds < 0) ) {
+            slider_img_panel.animate({left: (percent) + '%'}, 'fast');
+        } else if( Math.abs( move_ds ) < 15 && (move_ds > 0) ) {
+            slider_img_panel.animate({left: (percent) + '%'}, 'fast');
+        }
+        touchstart_x = 0;
+        touchstart_y = 0;
+        move_ds = 0;
+        e.preventDefault();
+    });
+};</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>jQuery touch swipe</h2>
+    <p>plug-in 재사용 테스트</p>
+    <p>슬라이드박스 정보를 CSS에 추가하고 함수호출</p>
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slider-box-2">
@@ -319,6 +527,242 @@ $('.sap-right').attr('data-index', 1).click(function(){
                 <span class="control-button"></span><span class="control-button"></span><span class="control-button"></span>
             </div>
         </div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>jQuery infinite slide (swipe는 좀더 구현해야 함)</h2>
+    <p>포인트1: 리스트 앞뒤로 마지막, 처음 리스트를 추가</p>
+    <p>포인트2: 마지막 노드로 이동시 이미지 패널의 left 값을 해당 이미지 노드로 변경</p>
+    <p>포인트3: jQuery animate 메서드의 콜백함수로 left값을 변경하면 된다.</p>
+    <p>포인트4: 슬라이딩백을 위한 percent 값 조절을 위해 setAngleIndex -> moveListSlider 순으로 호출한다.</p>
+    <p>포인트5: percent와 left의 초기값을 설정하여 초기화면을 보여준다.</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div><pre><code>&lt;div class="slider-box-3"&gt;
+&lt;div class="slider-img-panel"&gt;
+    &lt;ul&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class="control-left"&gt;&lt;i class="fa fa-angle-left fa-5x"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="control-right"&gt;&lt;i class="fa fa-angle-right fa-5x"&gt;&lt;/i&gt;&lt;/div&gt;
+&lt;div class="slider-control-panel"&gt;
+    &lt;span class="control-button"&gt;&lt;/span&gt;&lt;span class="control-button"&gt;&lt;/span&gt;&lt;span class="control-button"&gt;&lt;/span&gt;
+&lt;/div&gt;
+&lt;/div&gt;</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>jQuery infinite slide</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/css/slideshow.css"><i class="fa fa-fw fa-github"></i> slideshow.css</a></p></div>
+        <div><pre><code>/* 무한 스크롤 */
+/* 슬라이드 박스 추가 */
+.slider-box-3 {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+.slider-box-3 > .slider-img-panel {
+    position: relative;
+    left: 0%;
+}
+.slider-box-3 > .slider-img-panel > ul {
+    padding: 0px;
+    margin: 0px;
+    width: 500%;
+}
+.slider-box-3 > .slider-img-panel li {
+    float: left;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    width: 20%;
+}
+.slider-box03 > .slider-img-panel img {
+    max-width: 100%;
+}
+/* 슬라이더 컨트롤 좌우 */
+.slider-box-3 > .control-left {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    left: 0%;
+}
+.slider-box-3 > .control-right {
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    right: 0%;
+}
+.slider-box-3 > .control-left > i, .slider-box-3 > .control-right > i {
+    cursor: pointer;
+    color: #ffffff;
+    transition: background-color 0.6s ease;
+}
+.slider-box3 > .control-left > i:hover, .slider-box-3 > .control-right > i:hover {
+    color: #717171;
+}
+/* 슬라이더 컨트롤 하단 */
+.slider-box-3 > .slider-control-panel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -34.5px;
+}
+.slider-box-3 > .slider-control-panel .control-button {
+    cursor: pointer;
+    width: 13px;
+    height: 13px;
+    margin-right: 10px;
+    background: #ffffff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.slider-box-3 > .slider-control-panel .control-button:hover {
+    background-color: #717171;
+}</code></pre></div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>jQuery infinite slide</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/static/js/slideshow-plugin.js"><i class="fa fa-fw fa-github"></i> slideshow-plugin.js</a></p></div>
+        <div><pre><code>$.fn.slideshowInfinite = function (options) {
+    /* 터치 swipe 슬라이더 모듈 (무한 스크롤) */
+    /*
+    1 2 3 앞뒤로 추가 -> 3 1 2 3 1 로 변경
+    마지막 1로 이동한 순간 처음 1로 캔버스를 이동
+    처음 3으로 이동한 순간 마지막 3으로 이동
+    */
+    var target = $(this);
+    var slider_img_panel = target.children('.slider-img-panel');
+    var slider_img = target.find('.slider-img');
+    var control_left = target.children('.control-left');
+    var control_right = target.children('.control-right');
+    var control_button = target.find('.control-button');
+
+    var touchstart_x = 0;
+    var move_ds = 0;
+    var percent = -100;
+    var windowWidth = $(window).width();
+
+    // 초기 슬라이드 위치 지정
+    slider_img_panel.css('left', -100 + '%');
+
+    function moveListSlider(index) {
+        var willMoveLeft = -(index * 100);
+        slider_img_panel.animate({left: willMoveLeft + '%'}, 'fast', function(){
+            if (index == '4') {
+                slider_img_panel.css('left', -100 + '%');
+            } else if (index == '0') {
+                slider_img_panel.css('left', -300 + '%');
+            }
+        });
+    }
+    // 터치 드래그 하는 동안 DOM 이 따라오게 한다.
+    function moveListSlider_1(move_ds) {
+        slider_img_panel.css('left', move_ds+'%');
+    }
+    // 좌우 컨트롤 패널 인덱스 재설정 함수
+    function setAngleIndex(index) {
+        // 좌우 순서: 2,4 / 0,2(시작) / 1,3 / 2,4 / 0,2
+        switch (index) {
+            case '0':
+                control_left.attr('data-index', 2);
+                control_right.attr('data-index', 4);
+                percent = 0; // 터치이벤트에서 쓴다.
+                break;
+            case '1':
+                control_left.attr('data-index', 0);
+                control_right.attr('data-index', 2);
+                percent = -100;
+                break;
+            case '2':
+                control_left.attr('data-index', 1);
+                control_right.attr('data-index', 3);
+                percent = -200;
+                break;
+            case '3':
+                control_left.attr('data-index', 2);
+                control_right.attr('data-index', 4);
+                percent = -300;
+                break;
+            case '4':
+                control_left.attr('data-index', 0);
+                control_right.attr('data-index', 2);
+                percent = -400;
+            break;
+        }
+    }
+
+    // 위치 파악 인덱스 부여 - 하단
+    control_button.each(function(index) {
+        $(this).attr('data-index', index);
+    }).click(function() {
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        setAngleIndex(index);
+    });
+    // 위치 파악 인덱스 부여 - 좌우
+    control_left.attr('data-index', 0).click(function(){
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        setAngleIndex(index);
+    });
+    control_right.attr('data-index', 2).click(function(){
+        var index = $(this).attr('data-index');
+        moveListSlider(index);
+        setAngleIndex(index);
+    });
+
+
+    // 터치 swipe 이벤트
+    slider_img.on('touchstart', function(e){
+        var event = e.originalEvent;
+        touchstart_x = event.touches[0].pageX;
+        touchstart_y = event.touches[0].pageY;
+        e.preventDefault();
+    });
+    slider_img.on('touchmove', function(e){
+        var event = e.originalEvent;
+        var drag_dist;
+        var scroll_dist;
+        drag_dist = event.touches[0].pageX - touchstart_x;
+        move_ds = ( drag_dist / windowWidth ) * 100;
+        moveListSlider_1(percent+move_ds);
+        e.preventDefault();
+    });
+    slider_img.on('touchend', function(e){
+        if ( Math.abs( move_ds ) > 15 && (move_ds < 0) ) {
+            // 오른쪽 이동
+            var index = control_right.attr('data-index');
+            setAngleIndex(index);
+            moveListSlider(index);
+        } else if ( Math.abs( move_ds ) > 15 && (move_ds > 0) ) {
+            // 왼쪽 이동
+            var index = control_left.attr('data-index');
+            setAngleIndex(index);
+            moveListSlider(index);
+        }
+        // 페이지 전환되지 않았을 때 원상복귀
+        if( Math.abs( move_ds ) < 15 && (move_ds < 0) ) {
+            slider_img_panel.animate({left: (percent) + '%'}, 'fast');
+        } else if( Math.abs( move_ds ) < 15 && (move_ds > 0) ) {
+            slider_img_panel.animate({left: (percent) + '%'}, 'fast');
+        }
+        touchstart_x = 0;
+        move_ds = 0;
+        e.preventDefault();
+    });
+};</code></pre></div>
     </div>
 </div>
 
