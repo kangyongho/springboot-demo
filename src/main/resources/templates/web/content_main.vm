@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="/css/slideshow.css">
     <script src="/js/toggle.js"></script>
     <script src="/js/modal.js"></script>
+    <script src="/js/slideshow-plugin.js"></script>
     <script src="/js/slideshow.js"></script>
 </head>
 <body>

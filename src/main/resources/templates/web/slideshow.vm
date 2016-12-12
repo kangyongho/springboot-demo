@@ -1,25 +1,4 @@
 <div class="content-box">
-    <h2>touch swipe</h2>
-    <p>TODO 리팩토링</p>
-    <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
-        <div class="slider-box-3">
-            <div class="slider-img-panel-3">
-                <ul>
-                    <li class="slider-image-panel-li"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
-                    <li class="slider-image-panel-li"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
-                    <li class="slider-image-panel-li"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
-                </ul>
-            </div>
-            <div class="sap-left-3"><i class="fa fa-angle-left fa-5x"></i></div>
-            <div class="sap-right-3"><i class="fa fa-angle-right fa-5x"></i></div>
-            <div class="slider-control-panel-3">
-                <span class="control-button-3"></span><span class="control-button-3"></span><span class="control-button-3"></span>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="content-box">
     <h2>jQuery Slide</h2>
     <p>animation, move panel 방식</p>
     <p>슬라이더 패널 넓이, 이미지 넓이를 가변으로 생성해야 반응형 대응이 된다.(미구현)</p>
@@ -269,6 +248,77 @@ $('.sap-right').attr('data-index', 1).click(function(){
             break;
         }
 });</code></pre></div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>jQuery touch swipe</h2>
+    <p>plug-in 적용 (모듈화)</p>
+    <p>함수를 jQuery fn에 추가해서 사용하면 독립적인 객체로 작동하게 되고, 다른 영역과 분리가 되므로 플러그인 하나로 재사용이 가능하다.</p>
+    <p>css 제공, 적용 대상 태그, 메서드, 옵션을 고려해서 제작한다.</p>
+    <p>이점: 전역변수 핸들링에서 조금 자유로워 진다.</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="slider-box-1">
+            <div class="slider-img-panel">
+                <ul>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                </ul>
+            </div>
+            <div class="control-left"><i class="fa fa-angle-left fa-5x"></i></div>
+            <div class="control-right"><i class="fa fa-angle-right fa-5x"></i></div>
+            <div class="slider-control-panel">
+                <span class="control-button"></span><span class="control-button"></span><span class="control-button"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>jQuery touch swipe</h2>
+    <p>plug-in 재사용</p>
+    <p>클래스명, CSS 추가</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="slider-box-2">
+            <div class="slider-img-panel">
+                <ul>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                </ul>
+            </div>
+            <div class="control-left"><i class="fa fa-angle-left fa-5x"></i></div>
+            <div class="control-right"><i class="fa fa-angle-right fa-5x"></i></div>
+            <div class="slider-control-panel">
+                <span class="control-button"></span><span class="control-button"></span><span class="control-button"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>jQuery infinite slide</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
+        <div class="slider-box-3">
+            <div class="slider-img-panel">
+                <ul>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
+                </ul>
+            </div>
+            <div class="control-left"><i class="fa fa-angle-left fa-5x"></i></div>
+            <div class="control-right"><i class="fa fa-angle-right fa-5x"></i></div>
+            <div class="slider-control-panel">
+                <span class="control-button"></span><span class="control-button"></span><span class="control-button"></span>
+            </div>
+        </div>
     </div>
 </div>
 
