@@ -1,7 +1,7 @@
 <div class="content-box">
     <h2>CSS Basic Card Flip</h2>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/templates/web/cardflip.vm"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
         <div class="card-flip-box-basic">
             <div class="card-flip-basic"><p>Flip Card</p></div>
         </div>
@@ -11,7 +11,7 @@
     <h2>CSS Basic Card Flip</h2>
     <p>포인트1: transition(애니메이션 효과), transform rotateY함수(이동), perspective</p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/templates/web/cardflip.vm"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
         <pre><code>&lt;div class="card-flip-box-basic"&gt;
     &lt;div class="card-flip-basic"&gt;Flip Card&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -20,7 +20,7 @@
 <div class="content-box">
     <h2>CSS Basic Card Flip</h2>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.css</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/static/css/cardflip.css"><i class="fa fa-fw fa-github"></i> cardflip.css</a></p></div>
         <pre><code>.card-flip-basic {
     width: 200px;
     height: 200px;
@@ -33,7 +33,7 @@
 <div class="content-box">
     <h2>CSS Basic Card Flip</h2>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip-plugin.js</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/static/js/cardflip-plugin.js"><i class="fa fa-fw fa-github"></i> cardflip-plugin.js</a></p></div>
         <pre><code>$.fn.singleCardflip = function(){
     var target = $(this);
     var card_flip = target.children('.card-flip-basic');
@@ -55,7 +55,7 @@
 <div class="content-box">
     <h2>CSS Card Flip</h2>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/templates/web/cardflip.vm"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
         <div class="card-flip-box">
             <div class="card-flip">
                 <div class="card-back">
@@ -76,7 +76,7 @@
     <p>포인트2: 앞뒤 카드 absolute, rotateY 초기 방향과 flip시 방향 설정, backface-visibility hidden 속성</p>
     <p><a href="https://www.kirupa.com/html5/css3_animations_vs_transitions.htm">이슈: transition vs animation</a></p>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/templates/web/cardflip.vm"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
         <pre><code>&lt;div class="card-flip-box"&gt;
     &lt;div class="card-flip"&gt;
         &lt;div class="card-back"&gt;
@@ -94,7 +94,7 @@
 <div class="content-box">
     <h2>CSS Card Flip</h2>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.css</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/static/css/cardflip.css"><i class="fa fa-fw fa-github"></i> cardflip.css</a></p></div>
         <pre><code>.card-flip {
     width: 200px;
     height: 200px;
@@ -128,7 +128,7 @@
 <div class="content-box">
     <h2>CSS Card Flip</h2>
     <div class="content-box-inner">
-        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip-plugin.js</a></p></div>
+        <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-cardflip/src/main/resources/static/js/cardflip-plugin.js"><i class="fa fa-fw fa-github"></i> cardflip-plugin.js</a></p></div>
         <pre><code>$.fn.cardflip = function(){
     var target = $(this);
     var flip_button = target.find('.flip-button');
