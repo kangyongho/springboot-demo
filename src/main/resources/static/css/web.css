@@ -4,6 +4,7 @@
 body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; background-color: #f1f1f1; }
 li {list-style: none;}
 a {text-decoration: none; font-size: 14px; color: #34302d}
+.content a:hover {color: #6db33f;}
 img {border: 0;}
 button {margin-left: 2px; margin-top: 2px; padding: 3px; background-color: #C9F0DD; color: #34302d; border-style: none;}
 

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+.card-flip-basic {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #6db33f;
+    transition: transform .5s linear 0s;
+}
+
+.card-flip {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.card-flip > .card-back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #6db33f;
+    width:200px;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: transform .5s linear 0s;
+    -moz-transition: transform .5s linear 0s;
+    -ms-transition: transform .5s linear 0s;
+    -o-transition: transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+.card-flip > .card-front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background: #2288bb;
+    width:200px;
+    height: 200px;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transition: transform .5s linear 0s;
+    -moz-transition: transform .5s linear 0s;
+    -ms-transition: transform .5s linear 0s;
+    -o-transition: transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+}
+.card-flip .flip-button {
+    position: absolute;
+    bottom: 20px; right: 20px;
+    padding: 5px 10px;
+}
+

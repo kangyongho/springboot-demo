@@ -13,9 +13,9 @@
     </ul>
 </div>
 <div class="content-box">
-    <h2>drop down menu</h2>
-    <p>드롭다운 메뉴</p>
+    <h2>3D card flip effect</h2>
+    <p>CSS transition 변형 속성</p>
     <ul>
-        <li><a href="#">drop down menu</a></li>
+        <li><a href="/web/cardflip">card flip</a></li>
     </ul>
 </div>

@@ -1,0 +1,152 @@
+<div class="content-box">
+    <h2>CSS Basic Card Flip</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <div class="card-flip-box-basic">
+            <div class="card-flip-basic"><p>Flip Card</p></div>
+        </div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>CSS Basic Card Flip</h2>
+    <p>포인트1: transition(애니메이션 효과), transform rotateY함수(이동), perspective</p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <pre><code>&lt;div class="card-flip-box-basic"&gt;
+    &lt;div class="card-flip-basic"&gt;Flip Card&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+<div class="content-box">
+    <h2>CSS Basic Card Flip</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.css</a></p></div>
+        <pre><code>.card-flip-basic {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background-color: #6db33f;
+    transition: transform .5s linear 0s;
+}</code></pre>
+    </div>
+</div>
+<div class="content-box">
+    <h2>CSS Basic Card Flip</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip-plugin.js</a></p></div>
+        <pre><code>$.fn.singleCardflip = function(){
+    var target = $(this);
+    var card_flip = target.children('.card-flip-basic');
+
+    var flag = 0;
+    card_flip.click(function(){
+        if (flag == 0) {
+            card_flip.css('transform', 'perspective(600px) rotateY(-180deg)');
+            flag = 1;
+        } else {
+            card_flip.css('transform', 'perspective(600px) rotateY(0deg)');
+            flag = 0;
+        }
+    });
+}</code></pre>
+    </div>
+</div>
+
+<div class="content-box">
+    <h2>CSS Card Flip</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <div class="card-flip-box">
+            <div class="card-flip">
+                <div class="card-back">
+                    <p>Back Card</p>
+                    <button class="flip-button">flip</button>
+                </div>
+                <div class="card-front">
+                    <p>Front Card</p>
+                    <button class="flip-button">flip</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-box">
+    <h2>CSS Card Flip</h2>
+    <p>포인트1: transition(애니메이션 효과), transform rotateY함수(이동), perspective</p>
+    <p>포인트2: 앞뒤 카드 absolute, rotateY 초기 방향과 flip시 방향 설정, backface-visibility hidden 속성</p>
+    <p><a href="https://www.kirupa.com/html5/css3_animations_vs_transitions.htm">이슈: transition vs animation</a></p>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.vm</a></p></div>
+        <pre><code>&lt;div class="card-flip-box"&gt;
+    &lt;div class="card-flip"&gt;
+        &lt;div class="card-back"&gt;
+            &lt;p&gt;Back Card&lt;/p&gt;
+            &lt;button class="flip-button"&gt;flip&lt;/button&gt;
+        &lt;/div&gt;
+        &lt;div class="card-front"&gt;
+            &lt;p&gt;Front Card&lt;/p&gt;
+            &lt;button class="flip-button"&gt;flip&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+</div>
+<div class="content-box">
+    <h2>CSS Card Flip</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip.css</a></p></div>
+        <pre><code>.card-flip {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+.card-flip > .card-back {
+    position: absolute;
+    transform: perspective(600px) rotateY(180deg);
+    background: #6db33f;
+    width:200px;
+    height: 200px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+.card-flip > .card-front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    background: #2288bb;
+    width:200px;
+    height: 200px;
+    backface-visibility: hidden;
+    transition: transform .5s linear 0s;
+}
+.card-flip .flip-button {
+    position: absolute;
+    bottom: 20px; right: 20px;
+    padding: 5px 10px;
+}</code></pre>
+    </div>
+</div>
+<div class="content-box">
+    <h2>CSS Card Flip</h2>
+    <div class="content-box-inner">
+        <div class="cbi-title"><p><a href="#"><i class="fa fa-fw fa-github"></i> cardflip-plugin.js</a></p></div>
+        <pre><code>$.fn.cardflip = function(){
+    var target = $(this);
+    var flip_button = target.find('.flip-button');
+    var card_back = target.find('.card-back');
+    var card_front = target.find('.card-front');
+
+    var flag = 0;
+    flip_button.click(function(){
+        if (flag == 0) {
+            card_back.css('transform', 'perspective(600px) rotateY(0deg)');
+            card_front.css('transform', 'perspective(600px) rotateY(-180deg)');
+            flag = 1;
+        } else {
+            card_back.css('transform', 'perspective(600px) rotateY(180deg)');
+            card_front.css('transform', 'perspective(600px) rotateY(0deg)');
+            flag = 0;
+        }
+    });
+}</code></pre>
+    </div>
+</div>
