@@ -10,12 +10,7 @@
     <h2>Jenkins 배포</h2>
     <p>빌드 배포 통합툴</p>
     <ul>
-        <li><a href="#">설치하기</a></li>
-        <li><a href="#">초기설정</a></li>
-        <li><a href="#">프로젝트 빌드하기</a></li>
-        <li><a href="#">Git 프로젝트 빌드하기</a></li>
-        <li><a href="#">GitHub 연동</a></li>
-        <li><a href="#">Spring Boot 빌드 배포</a></li>
+        <li><a href="/spring/jenkins">Jenkins 사용방법</a></li>
     </ul>
 </div>
 <div class="content-box">

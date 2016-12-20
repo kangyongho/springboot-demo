@@ -4,8 +4,10 @@
 body {font-family: '맑은 고딕', 'Apple SD Gothic Neo', sans-serif; background-color: #f1f1f1; }
 li {list-style: none;}
 a {text-decoration: none; font-size: 14px; color: #34302d}
+.content a:hover {color: #6db33f;}
 img {border: 0;}
 button {margin-left: 2px; margin-top: 2px; padding: 3px; background-color: #C9F0DD; color: #34302d; border-style: none;}
+p {margin-top: 3px;}
 
 /* 배경색 지정 */
 .header {background-color: #34302d}
@@ -15,7 +17,11 @@ button {margin-left: 2px; margin-top: 2px; padding: 3px; background-color: #C9F0
 .footer {background-color: #34302d}
 
 /* 컨텐츠 박스 꾸미기 */
-
+.content-box-inner img {
+    max-width: 100%;
+    height: auto;
+}
+.content-box-inner .content-img {margin: 5px 10px;}
 
 /* 599px 이하 */
 @media (max-width: 599px) {
