@@ -88,14 +88,18 @@
         <div class="news">
             <h1>예)공지사항</h1>
             <ul>
-                <li><a href="#"><time datetime="2016-09-25">09/25</time>
+                <li><a href="#"><time datetime="2016-12-26">12/26</time>
                     <div class="text">Spring Boot 제작중입니다.</div></a></li>
-                <li><a href="#"><time datetime="2016-10-15">10/15</time><div class="text">
+                <li><a href="#"><time datetime="2016-12-26">12/26</time><div class="text">
+                    Spring에 Jenkins 추가되었습니다.</div></a></li>
+                <li><a href="#"><time datetime="2016-12-26">12/26</time>
+                    <div class="text">Web 제작중입니다.</div></a></li>
+                <li><a href="#"><time datetime="2016-12-26">12/26</time><div class="text">
                     Django 제작예정입니다.</div></a></li>
-                <li><a href="#"><time datetime="2016-09-22">11/07</time><div class="text">
+                <li><a href="#"><time datetime="2016-12-26">12/26</time><div class="text">
                     node.js express 제작예정입니다.</div></a></li>
-                <li><a href="#"><time datetime="2016-09-15">11/30</time><div class="text">
-                    AWS, Jenkins, RoR 추가 예정입니다.</div></a></li>
+                <li><a href="#"><time datetime="2016-12-26">12/26</time><div class="text">
+                    RoR, CSS, HTML, JS 등 추가 예정입니다.</div></a></li>
             </ul>
         </div>
     </div>

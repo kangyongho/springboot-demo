@@ -20,14 +20,14 @@
         <li><a href="/spring/fileupload">스프링의 파일업로드</a></li>
     </ul>
 </div>
-<div class="content-box">
-    <h2>페이징 기술</h2>
-    <p>다양한 페이징 기술</p>
-    <ul>
-        <li><a href="#">페이징이란?</a></li>
-        <li><a href="#">임시 데이터를 이용해보자</a></li>
-        <li><a href="#">DB 연동</a></li>
-        <li><a href="#">Ajax 연동</a></li>
-        <li><a href="#">Remote DB 연동</a></li>
-    </ul>
-</div>
+##<div class="content-box">
+##    <h2>페이징 기술</h2>
+##    <p>다양한 페이징 기술</p>
+##    <ul>
+##        <li><a href="#">페이징이란?</a></li>
+##        <li><a href="#">임시 데이터를 이용해보자</a></li>
+##        <li><a href="#">DB 연동</a></li>
+##        <li><a href="#">Ajax 연동</a></li>
+##        <li><a href="#">Remote DB 연동</a></li>
+##    </ul>
+##</div>

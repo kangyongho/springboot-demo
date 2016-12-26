@@ -20,7 +20,7 @@
 <header class="header">
 <div class="header-inner">
     <div class="header-title">
-        <a href="/"><img src="https://spring.io/img/spring-by-pivotal-9066b55828deb3c10e27e609af322c40.png", alt="spring"></a>
+        <a href="/"><img src="/img/spring_logo.png", alt="spring"></a>
     </div>
     <div class="top-menu">
         <div id="top-menu-btn">

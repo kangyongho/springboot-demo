@@ -4,9 +4,9 @@
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div class="slideshow-canvas">
             <div class="slider-image-panel">
-                <img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/>
-                <img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/>
-                <img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/>
+                <img class="slider-image" src="/img/slide_01.jpg"/>
+                <img class="slider-image" src="/img/slide_02.jpg"/>
+                <img class="slider-image" src="/img/slide_03.jpg"/>
             </div>
             <div class="slider-text-panel">
                 <div class="slider-text">
@@ -33,9 +33,9 @@
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div><pre><code>&lt;div class="slideshow-canvas"&gt;
 &lt;div class="slider-image-panel"&gt;
-    &lt;img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;
-    &lt;img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/&gt;
-    &lt;img class="slider-image" src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;
+    &lt;img class="slider-image" src="/img/slide_01.jpg"/&gt;
+    &lt;img class="slider-image" src="/img/slide_02.jpg"/&gt;
+    &lt;img class="slider-image" src="/img/slide_03.jpg"/&gt;
 &lt;/div&gt;
 &lt;div class="slider-text-panel"&gt;
     &lt;div class="slider-text"&gt;
@@ -62,9 +62,9 @@
         <div class="slider-box">
             <div class="slider-img-panel">
                 <ul>
-                    <li><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
-                    <li><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
-                    <li><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                    <li><img src="/img/slide_01.jpg"/></li>
+                    <li><img src="/img/slide_02.jpg"/></li>
+                    <li><img src="/img/slide_03.jpg"/></li>
                 </ul>
             </div>
             <div class="slider-angle-panel">
@@ -89,9 +89,9 @@
         <div><pre><code>&lt;div class="slider-box"&gt;
 &lt;div class="slider-img-panel"&gt;
     &lt;ul&gt;
-        &lt;li&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/&gt;&lt;/li&gt;
-        &lt;li&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="/img/slide_01.jpg"/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="/img/slide_02.jpg"/&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;img src="/img/slide_03.jpg"/&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="slider-angle-panel"&gt;
@@ -253,9 +253,9 @@ $('.sap-right').attr('data-index', 1).click(function(){
         <div class="slider-box-1">
             <div class="slider-img-panel">
                 <ul>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_01.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_02.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_03.jpg"/></li>
                 </ul>
             </div>
             <div class="control-left"><i class="fa fa-angle-left fa-5x"></i></div>
@@ -277,9 +277,9 @@ $('.sap-right').attr('data-index', 1).click(function(){
         <div><pre><code>&lt;div class="slider-box-1"&gt;
 &lt;div class="slider-img-panel"&gt;
     &lt;ul&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;&lt;/li&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/&gt;&lt;/li&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_01.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_02.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_03.jpg"/&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="control-left"&gt;&lt;i class="fa fa-angle-left fa-5x"&gt;&lt;/i&gt;&lt;/div&gt;
@@ -493,9 +493,9 @@ $('.sap-right').attr('data-index', 1).click(function(){
         <div class="slider-box-2">
             <div class="slider-img-panel">
                 <ul>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_01.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_02.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_03.jpg"/></li>
                 </ul>
             </div>
             <div class="control-left"><i class="fa fa-angle-left fa-5x"></i></div>
@@ -514,11 +514,11 @@ $('.sap-right').attr('data-index', 1).click(function(){
         <div class="slider-box-3">
             <div class="slider-img-panel">
                 <ul>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></li>
-                    <li class="slider-img"><img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_03.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_01.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_02.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_03.jpg"/></li>
+                    <li class="slider-img"><img src="/img/slide_01.jpg"/></li>
                 </ul>
             </div>
             <div class="control-left"><i class="fa fa-angle-left fa-5x"></i></div>
@@ -541,11 +541,11 @@ $('.sap-right').attr('data-index', 1).click(function(){
         <div><pre><code>&lt;div class="slider-box-3"&gt;
 &lt;div class="slider-img-panel"&gt;
     &lt;ul&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;&lt;/li&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;&lt;/li&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/&gt;&lt;/li&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/&gt;&lt;/li&gt;
-        &lt;li class="slider-img"&gt;&lt;img src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_03.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_01.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_02.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_03.jpg"/&gt;&lt;/li&gt;
+        &lt;li class="slider-img"&gt;&lt;img src="/img/slide_01.jpg"/&gt;&lt;/li&gt;
     &lt;/ul&gt;
 &lt;/div&gt;
 &lt;div class="control-left"&gt;&lt;i class="fa fa-angle-left fa-5x"&gt;&lt;/i&gt;&lt;/div&gt;
@@ -772,9 +772,9 @@ $('.sap-right').attr('data-index', 1).click(function(){
     <div class="content-box-inner">
         <div class="cbi-title"><p><a href="https://github.com/kangyongho/springboot-demo/blob/feature/web-slideshow/src/main/resources/templates/web/slideshow.vm"><i class="fa fa-fw fa-github"></i> slideshow.vm</a></p></div>
         <div>
-            <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2016/05/Untitled-1-1.jpg"/></div>
-            <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2016/02/banner.jpg"/></div>
-            <div><img class="test-img" src="http://ralphvanderpauw.com/wp-content/uploads/2014/12/traveling-1000x350.jpg"/></div>
+            <div><img class="test-img" src="/img/slide_01.jpg"/></div>
+            <div><img class="test-img" src="/img/slide_02.jpg"/></div>
+            <div><img class="test-img" src="/img/slide_03.jpg"/></div>
         </div>
     </div>
 </div>
