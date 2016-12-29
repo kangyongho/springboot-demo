@@ -37,4 +37,6 @@ dependencies {
 	compile group: 'commons-io', name: 'commons-io', version: '2.5'
 	providedRuntime('org.springframework.boot:spring-boot-starter-tomcat')
 	testCompile('org.springframework.boot:spring-boot-starter-test')
+	compile ('mysql:mysql-connector-java:5.1.40')
+	compile ("commons-dbcp:commons-dbcp:1.4")
 }

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Property</title>
+</head>
+<body>
+<h2>dev.user ${devUser}</h2>
+<h2>dev.pw ${devPw}</h2>
+<h2>prod.user ${prodUser}</h2>
+<h2>prod.pw ${prodPw}</h2>
+</body>
+</html>

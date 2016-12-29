@@ -1,5 +1,9 @@
 package net.ddns;
 
+import net.ddns.db.MySQLDAO;
+import org.apache.commons.dbcp.BasicDataSource;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -11,6 +15,8 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.*;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
@@ -131,5 +137,44 @@ public class HelloController {
     public String scriptContent(@PathVariable String content, Model model) {
         model.addAttribute("content", content);
         return "javascript/content_main";
+    }
+
+    @Value("${dev.user:undefined}")
+    private String devUser;
+    @Value("${dev.pw:undefined}")
+    private String devPw;
+    @Value("${prod.user:undefined}")
+    private String prodUser;
+    @Value("${prod.pw:undefined}")
+    private String prodPw;
+
+    @Autowired
+    BasicDataSource basicDataSource;
+
+    @RequestMapping(value="property", method=RequestMethod.GET)
+    public String pagingMySQL(Model model) {
+        System.out.println("dev.user: " + devUser);
+        System.out.println("dev.pw: " + devPw);
+        System.out.println("prod.user: " + prodUser);
+        System.out.println("prod.pw: " + prodPw);
+
+        model.addAttribute("devUser", devUser);
+        model.addAttribute("devPw", devPw);
+        model.addAttribute("prodUser", prodUser);
+        model.addAttribute("prodPw", prodPw);
+
+        MySQLDAO mySQLDAO = new MySQLDAO();
+        try {
+            Connection connection = basicDataSource.getConnection();
+            System.out.println("데이터베이스에 접속했습니다.");
+
+            mySQLDAO.pagingMySQL(connection);
+
+            basicDataSource.close();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return "demo/property-test";
     }
 }
