@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource(value="file:C:\\properties\\application-dev.properties", ignoreResourceNotFound=true)
 @PropertySource(value="file:C:\\properties\\application-prod.properties", ignoreResourceNotFound=true)
-@PropertySource(value="file:/home/ubuntu/.properties/application-prod.properties", ignoreResourceNotFound=true)
+@PropertySource(value="file:///home/ubuntu/.properties/application-prod.properties", ignoreResourceNotFound=true)
 public class ExternalProperty {
 
 }
