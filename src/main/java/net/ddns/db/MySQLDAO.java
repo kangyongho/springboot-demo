@@ -39,6 +39,7 @@ public class MySQLDAO {
         System.out.println("endPage: " + endPage);
 
         /* MySQL 쿼리 LIMIT로 페이지 번호를 이용하여 범위로 검색해 온다 */
+        /* "SELECT * FROM board LIMIT ?, [OFFSET] ?"; OFFSET이 생략되어 있다. */
         String selectSQL = "SELECT * FROM board LIMIT ?, ?";
         PreparedStatement psSelectSQL = connection.prepareStatement(selectSQL);
         psSelectSQL.setInt(1, (page-1)*countList);
